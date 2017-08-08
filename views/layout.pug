@@ -1,6 +1,23 @@
 doctype html
-html(lang='en')
+html
   head
-  title Barkley Roombot
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Barkley Roombot
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='css/vars.css')
+    //- include partials/favicon.pug
+    //- script(src='js/analytics.js')
+    meta(property='og:title', content='')
+    meta(property='og:description', content='')
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='')
+    meta(property='og:url', content= '')
   body
-    block content
+    main
+      block content
+    script(src='js/lib/jquery.min.js')
+    block extra_scripts
+    script(src='js/main.bundle.js')

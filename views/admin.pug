@@ -1,4 +1,23 @@
 extends layout.pug
 
 block content
-  h1 admin
+  h1 Barkley Roombot
+  - var floorNum = 0;
+  ul.room-list
+    while floorNum++ < 4
+      li
+        h2= `Floor ${floorNum}`
+        table
+          thead
+            tr
+              th Room
+              th Map
+              th Image
+              th Description
+          tbody
+            - var roomNum = 0;
+            while roomNum++ < 10
+              include partials/blue-lounge.pug
+
+block extra_scripts
+  //- script(src='js/lib/mindmup-editabletable.js')
