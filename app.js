@@ -1,31 +1,28 @@
 require('dotenv').config();
 
-const TwilioSMSBot = require('botkit-sms');
-const controller = TwilioSMSBot({
-  account_sid: process.env.TWILIO_ACCOUNT_SID,
-  auth_token: process.env.TWILIO_AUTH_TOKEN,
-  twilio_number: process.env.TWILIO_NUMBER
+const express = require('express');
+const app = express();
+const bodyParser= require('body-parser');
+const http = require('http').Server(app);
+const path = require('path');
+
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); //for parsing url encoded
+
+app.set('view engine', 'pug');
+app.use(express.static(path.join(__dirname, 'public')));
+
+require('./botkit-controller')(app);
+
+app.get('/', function(req, res) {
+  res.render('index');
 });
 
-let bot = controller.spawn({});
+app.get('*', function(req, res) {
+  res.redirect('/');
+})
 
 const port = process.env.PORT || 3000;
-controller.setupWebserver(port, function (err, webserver) {
-  controller.createWebhookEndpoints(controller.webserver, bot, function () {
-    console.log('TwilioSMSBot is online!');
-  });
-});
-
-controller.hears(['hi', 'hello'], 'message_received', (bot, message) => {
-  bot.startConversation(message, (err, convo) => {
-    convo.say('Hi, I am Oliver, an SMS bot! :D');
-    convo.ask('What is your name?', (res, convo) => {
-      convo.say(`Nice to meet you, ${res.text}!`);
-      convo.next();
-    });
-  });
-});
-
-controller.hears('.*', 'message_received', (bot, message) => {
-  bot.reply(message, 'huh?');
+http.listen(port, function() {
+  console.log('Server running on port ' + port);
 });
