@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+  h1 Sign-in to this Express authentication example
+  p Use <i>user</i> for the username and <i>pass</i> for the password.
+  form(method='post')
+    p
+      label(for='username') Username
+      input(type='text', name='username')
+    p
+      label(for='password') Password
+      input(type='password', name='password')
+    input(type='submit')
+    each message in flash
+      h4(style="color: red;") #{message}
