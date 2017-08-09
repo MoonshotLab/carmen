@@ -8,7 +8,7 @@ const controller = TwilioSMSBot({
 module.exports = function(app) {
   let bot = controller.spawn({});
 
-  controller.createWebhookEndpoints(app, bot, function () {
+  controller.createWebhookEndpoints(app, bot, function() {
     controller.startTicking();
     console.log('TwilioSMSBot is online!');
   });
@@ -26,4 +26,4 @@ module.exports = function(app) {
   controller.hears('.*', 'message_received', (bot, message) => {
     bot.reply(message, 'huh?');
   });
-}
+};
