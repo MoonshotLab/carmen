@@ -52,7 +52,12 @@ function getRoomFromRoomListUsingLevensheinDistance(query) {
     });
   }
 
-  return bestMatch;
+  // only tolerate a threshold distance, otherwise gobbledigook will match
+  if (bestDistance <= 3) {
+    return bestMatch;
+  } else {
+    return null;
+  }
 }
 
 module.exports = function(app) {
