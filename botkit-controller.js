@@ -29,16 +29,6 @@ module.exports = function(app) {
   );
 
   controller.hears('.*', 'message_received', (bot, message) => {
-    // bot.reply(message, `Sorry, not sure what you mean. Maybe ask Eddie?`);
-    bot.reply(message, {
-      attachments: [
-        {
-          contentType: 'image/png',
-          contentUrl:
-            'https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png',
-          name: 'Bender_Rodriguez.png'
-        }
-      ]
-    });
+    bot.reply(message, `Sorry, not sure what you mean. Maybe ask Eddie?`);
   });
 };
