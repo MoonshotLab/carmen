@@ -105,7 +105,6 @@ module.exports = function(app) {
 
   controller.hears('.*', 'message_received', (bot, message) => {
     bot.startConversation(message, (err, convo) => {
-      if (convo) console.log(err);
       const query = removeQuestionWordsFromString(message.text);
       const roomObj = getRoomFromRoomListUsingLevensheinDistance(query);
 
