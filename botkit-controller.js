@@ -109,36 +109,41 @@ module.exports = function(app) {
       const query = removeQuestionWordsFromString(message.text);
       const roomObj = getRoomFromRoomListUsingLevensheinDistance(query);
 
-      convo.ask(
-        `I'm not exactly sure what you meant. Where you asking how to find ${roomObj.name}?`,
-        [
-          {
-            pattern: bot.utterances.yes,
-            callback: (res, convo) => {
-              convo.say(roomObj.location);
-              convo.next();
+      if (roomObj !== null) {
+        convo.ask(
+          `I'm not exactly sure what you meant. Where you asking how to find ${roomObj.name}?`,
+          [
+            {
+              pattern: bot.utterances.yes,
+              callback: (res, convo) => {
+                convo.say(roomObj.location);
+                convo.next();
+              }
+            },
+            {
+              pattern: bot.utterances.no,
+              callback: (res, convo) => {
+                convo.say(
+                  `Unfortunately, I don't understand what you're asking. Maybe try asking a different way, or check your spelling! 🤷‍`
+                );
+                convo.next();
+              }
+            },
+            {
+              default: true,
+              callback: (res, convo) => {
+                convo.say(
+                  `I don't understand. Maybe try asking a different way!`
+                );
+                convo.next();
+              }
             }
-          },
-          {
-            pattern: bot.utterances.no,
-            callback: (res, convo) => {
-              convo.say(
-                `Unfortunately, I don't understand what you're asking. Maybe try asking a different way, or check your spelling! 🤷‍`
-              );
-              convo.next();
-            }
-          },
-          {
-            default: true,
-            callback: (res, convo) => {
-              convo.say(
-                `I don't understand. Maybe try asking a different way!`
-              );
-              convo.next();
-            }
-          }
-        ]
-      );
+          ]
+        );
+      } else {
+        convo.say(`I'm not sure what you mean. Try asking a different way!`);
+        convo.next();
+      }
     });
   });
 };
