@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Apollo",
+    "location": "Apollo is on the 1st floor, down the hall from the gym, behind the old production pit."
+  },
+  {
+    "name": "Galaxy",
+    "location": "Galaxy is on the 1st floor, in the large room where the video team used to be, right across from the gym."
+  },
+  {
+    "name": "Gym",
+    "location": "The gym is on the 1st floor, across from Galaxy, to the right side of the hall after entering the door by the elevators."
+  },
+  {
+    "name": "Spray Room",
+    "location": "The spray room is on the 1st floor, in the northwest corner, near the old Production pit."
+  },
+  {
+    "name": "Albert II",
+    "location": "Albert II is on the 2nd floor, just south of the Baltimore entrance, near the old Blacktop area."
+  },
+  {
+    "name": "Buzz Aldrin",
+    "location": "Buzz Aldrin is on the 2nd floor, in the southwest corner, near the old Blacktop area."
+  },
+  {
+    "name": "Ellen Ochoa",
+    "location": "Ellen Ochoa is on the 2nd floor, just north of the Baltimore entrance, near Crossroads."
+  },
+  {
+    "name": "Gus Grissom",
+    "location": "Gus Grissom is on the 2nd floor, the large room on west side near the southwest corner, near the old Blacktop space."
+  },
+  {
+    "name": "Mark Kelly",
+    "location": "Mark Kelly is on the 2nd floor, immediately north of the Baltimore entrance, near Crossroads."
+  },
+  {
+    "name": "Neil Armstrong",
+    "location": "Neil Armstrong is on the 2nd floor, in the southeast corner, near the Account team."
+  },
+  {
+    "name": "Sally Ride",
+    "location": "Sally Ride is on the 2nd floor, in the northeast corner of the east wing, by where Moonshot used to sit."
+  },
+  {
+    "name": "Han Solo",
+    "location": "Han Solo is on the 2nd floor, in the southwest corner near the old Blacktop space."
+  },
+  {
+    "name": "Chewie",
+    "location": "Chewie is on the 2nd floor, in the southwest corner near the old Blacktop space, right next to Han Solo (duh)."
+  },
+  {
+    "name": "Laika",
+    "location": "Laika is on the 2nd floor, the area with the large TV right across from the old Moonshot lab space."
+  },
+  {
+    "name": "Tsygan",
+    "location": "Tsygan is on the 2nd floor, in the corridor to the Balitmore exit."
+  },
+  {
+    "name": "Dyzik",
+    "location": "Dyzik is on the 2nd floor, in the corridor to the Balitmore exit."
+  },
+  {
+    "name": "The City Dump",
+    "location": "The City Dump is on the 2nd floor, in the northwest corner, near the new 40Digits space."
+  },
+  {
+    "name": "The Stadium",
+    "location": "The Stadium is on the 2nd floor, in the northwest corner, near the new 40Digits space."
+  },
+  {
+    "name": "The Court House",
+    "location": "The Court House is on the 2nd floor, in the northwest corner, near the new 40Digits space."
+  },
+  {
+    "name": "The City Plaza",
+    "location": "The City Plaza is on the 2nd floor, in the northwest corner, near the new 40Digits space."
+  },
+  {
+    "name": "Judy Jetson",
+    "location": "Judy Jetson is on the 2nd floor, the third room east of the southwest corner, near the old Blacktop space."
+  },
+  {
+    "name": "Jane Jetson",
+    "location": "Jane Jetson is on the 2nd floor, on the east side, near the Account team."
+  },
+  {
+    "name": "George Jetson",
+    "location": "George Jetson is on the 2nd floor, on the east side, near the Account team."
+  },
+  {
+    "name": "Mortis",
+    "location": "Mortis is on the 2nd floor, in the new 40Digits space."
+  },
+  {
+    "name": "Millennium Falcon",
+    "location": "Millennium Falcon is on the 2nd floor, in the new 40Digits space."
+  },
+  {
+    "name": "Er'kit",
+    "location": "Er'kit is on the 2nd floor, in the new 40Digits space."
+  },
+  {
+    "name": "Astro",
+    "location": "Astro is on the 3rd floor, just east of the elevators, near Datum."
+  },
+  {
+    "name": "Eris",
+    "location": "Eris is on the 3rd floor, right next to Astro, just east of the elevators, near Datum."
+  },
+  {
+    "name": "Jupiter",
+    "location": "Jupiter is on the 3rd floor, just behind the top of the stairs coming up from the second floor."
+  },
+  {
+    "name": "Saturn",
+    "location": "Saturn is on the 3rd floor, near the top of the stairs coming up from the second floor, near Social."
+  },
+  {
+    "name": "Mars",
+    "location": "Mars is on the 3rd floor, in the Northeast corner of the east wing, near Social."
+  },
+  {
+    "name": "Mr. Spacely",
+    "location": "Mr. Spacely is on the 3rd floor, on the far east wall, near Social."
+  },
+  {
+    "name": "Rosie",
+    "location": "Rosie is on the 3rd floor, on the far east wall, near Social."
+  },
+  {
+    "name": "Earth",
+    "location": "You're standing on it! 😉 Jk. Earth is on the 3rd floor, in the southeast corner."
+  },
+  {
+    "name": "Mercury",
+    "location": "Mercury is on the 3rd floor, in the northwest corner."
+  },
+  {
+    "name": "Venus",
+    "location": "Venus is on the 3rd floor, in the northwest corner."
+  },
+  {
+    "name": "Uranus",
+    "location": "Uranus is on the 3rd floor, in the northwest corner."
+  },
+  {
+    "name": "Neptune",
+    "location": "Neptunes is on the 3rd floor, in the southwest corner."
+  },
+  {
+    "name": "Sun",
+    "location": "Sun is on the 3rd floor, just east of the elevator, between Eris and Jupiter."
+  },
+  {
+    "name": "Calvera",
+    "location": "Calvera is the VR Space on the 3rd floor, right next to Moonshot."
+  },
+  {
+    "name": "Michael Bay",
+    "location": "Michael Bay is one of the video team edit bays on the 3rd floor, right next to Moonshot."
+  },
+  {
+    "name": "Bay Romano",
+    "location": "Bay Romano is one of the video team edit bay on the 3rd floor, right next to Production."
+  },
+  {
+    "name": "Rocket Fuel",
+    "location": "Rocket Fuel is the kitchen on the West side of the 3rd floor."
+  },
+  {
+    "name": "Blue Lounge",
+    "location": "The Blue Lounge is on the 4th floor, in the Northwest corner, right by Flight Deck."
+  },
+  {
+    "name": "Magenta Lounge",
+    "location": "The Magenta Lounge is on the 4th floor, near the Southeast corner, right in front of you whenever you come up the stairs."
+  },
+  {
+    "name": "Green Lounge",
+    "location": "The Green Lounge is the stage on the 4th floor, right in the middle."
+  },
+  {
+    "name": "Black Lounge",
+    "location": "The Black Lounge is on the 4th floor, in the Southeast corner, right next to the Magenta Lounge."
+  },
+  {
+    "name": "Flight Deck",
+    "location": "The Flight Deck is the board room on the 4th floor, just west of the top of the stairs / elevator."
+  },
+  {
+    "name": "Kitchen Table",
+    "location": "The Kitchen Table is the long wooden table on the 4th floor."
+  },
+  {
+    "name": "Zen Rooms",
+    "location": "The Zen Rooms are on the 4th floor, at the top of the stairs, with the red doors."
+  }
+]

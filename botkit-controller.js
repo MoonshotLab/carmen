@@ -14,16 +14,31 @@ module.exports = function(app) {
   });
 
   controller.hears(['hi', 'hello'], 'message_received', (bot, message) => {
-    bot.startConversation(message, (err, convo) => {
-      convo.say('Hi, I am Oliver, an SMS bot! :D');
-      convo.ask('What is your name?', (res, convo) => {
-        convo.say(`Nice to meet you, ${res.text}!`);
-        convo.next();
-      });
-    });
+    bot.reply(
+      message,
+      `Hi there! I'm Roombot, a tool made by Moonshot to help you find any room in the building. To use me, just ask, "Where's Uranus", for example.`
+    );
   });
 
+  controller.hears(
+    ['thanks', 'thank you'],
+    'message_received',
+    (bot, message) => {
+      bot.reply(message, `You're welcome!`);
+    }
+  );
+
   controller.hears('.*', 'message_received', (bot, message) => {
-    bot.reply(message, 'huh?');
+    // bot.reply(message, `Sorry, not sure what you mean. Maybe ask Eddie?`);
+    bot.reply(message, {
+      attachments: [
+        {
+          contentType: 'image/png',
+          contentUrl:
+            'https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png',
+          name: 'Bender_Rodriguez.png'
+        }
+      ]
+    });
   });
 };
