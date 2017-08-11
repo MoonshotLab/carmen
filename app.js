@@ -39,7 +39,7 @@ app.use(
 );
 app.use(flash());
 
-app.use(checkAuth);
+// app.use(checkAuth);
 app.use('/', routes);
 
 require('./botkit-controller')(app);
