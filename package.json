@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "botkit-sms": "https://github.com/prichey/botkit-sms/tarball/master",
     "cookie-parser": "^1.4.3",
@@ -25,6 +26,7 @@
     "fs": "0.0.1-security",
     "http": "0.0.0",
     "lowdb": "^0.16.2",
+    "moment": "^2.18.1",
     "mongoose": "^4.11.6",
     "morgan": "^1.8.2",
     "npm-run-all": "^4.0.2",
