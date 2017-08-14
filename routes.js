@@ -2,7 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', {
+    title: 'Carmen',
+    bodyId: 'index'
+  });
 });
 
 router.get('/admin', function(req, res) {

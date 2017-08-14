@@ -3,7 +3,7 @@ html
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    title Barkley Roombot
+    title #{title}
     meta(name='description', content='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='css/main.css')
@@ -15,7 +15,7 @@ html
     meta(property='og:type', content='website')
     meta(property='og:image', content='')
     meta(property='og:url', content= '')
-  body
+  body(class= bodyClasses, id= bodyId)
     main
       block content
     script(src='js/lib/jquery.min.js')

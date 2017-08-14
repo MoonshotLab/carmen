@@ -54,7 +54,7 @@ gulp.task('sass', function() {
     .src('./src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
 });
 

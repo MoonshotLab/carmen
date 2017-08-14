@@ -1,5 +1,4 @@
 html {
-  
 }
 
 // html,
@@ -7,10 +6,19 @@ html {
 //   font-family: 'Lato', sans-serif;
 // }
 
+body#index {
+  height: 100vh;
+
+  main {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
 main {
   max-width: 80rem;
   padding: 1rem;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 .skinny {
@@ -25,5 +33,17 @@ main {
 
   img {
     display: none !important;
+  }
+}
+
+#carmen {
+  height: 100%;
+
+  img {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
