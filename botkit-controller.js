@@ -19,6 +19,7 @@ const controller = TwilioSMSBot({
   json_file_store: 'public/logs/conversation/'
 });
 const bot = controller.spawn({});
+let lastRoom = null; // keep track of the last room user asked about
 
 function log(str) {
   let logStr = `[${moment().format('MM/DD/YY HH:mm:ss')}] ${str}`;
@@ -191,6 +192,7 @@ function sendFollowUpCopy(copy, convo) {
         logQuestionAnswered(res.text, message.to);
 
         const messageToSend = roomObj.location;
+
         logMessageSent(messageToSend, message.from);
         convo.say(messageToSend);
         convo.next();
@@ -236,12 +238,13 @@ module.exports = function(app) {
         const roomObj = getRoomFromRoomList(message.match[0]);
 
         if (roomObj && roomObj.location) {
+          lastRoom = roomObj;
           roomFound = true;
+
           const messageToSend = roomObj.location;
           logMessageSent(messageToSend, message.from);
           convo.say(messageToSend);
-          // bot.say('hi hi');
-          // convo.say(messageToSend);
+
           followUpWithPicsIfAvailable(roomObj, convo, message); // give the option of sending a picture or a map of the room, if available
         }
       }
@@ -283,6 +286,43 @@ module.exports = function(app) {
       replyToMessage(message, `You're welcome!`);
     }
   );
+
+  controller.hears(['P', 'M'], 'message_received', (bot, message) => {
+    if (lastRoom !== null && 'img' in lastRoom) {
+      let match = message.match[0];
+      if (match === 'P' && 'pic' in lastRoom.img) {
+        const imgUrl = `${process.env.SITE_URL}/${lastRoom.img.pic}`;
+        logImageSent(imgUrl, message.from);
+        bot.reply(
+          message,
+          'Coming your way! Images take a moment to send, so please be patient.'
+        );
+
+        bot.reply(message, {
+          mediaUrl: imgUrl
+        });
+      } else if (match === 'M' && 'map' in lastRoom.img) {
+        const imgUrl = `${process.env.SITE_URL}/${lastRoom.img.map}`;
+        logImageSent(imgUrl, message.from);
+        bot.reply(
+          message,
+          'Coming your way! Images take a moment to send, so please be patient.'
+        );
+
+        bot.reply(message, {
+          mediaUrl: imgUrl
+        });
+      } else {
+        const messageToSend = `I'm not sure what you mean. Try asking a different way!`;
+        logMessageSent(messageToSend, message.from);
+        bot.reply(message, messageToSend);
+      }
+    } else {
+      const messageToSend = `I'm not sure what you mean. Try asking a different way!`;
+      logMessageSent(messageToSend, message.from);
+      bot.reply(message, messageToSend);
+    }
+  });
 
   controller.hears('.*', 'message_received', (bot, message) => {
     bot.startConversation(message, (err, convo) => {
