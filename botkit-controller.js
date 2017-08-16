@@ -10,6 +10,8 @@ const logPath = './public/logs/test.log';
 const rooms = require('./rooms.json');
 const roomList = rooms.map(roomObj => roomObj.name);
 
+const levenThreshold = 5;
+
 const controller = TwilioSMSBot({
   account_sid: process.env.TWILIO_ACCOUNT_SID,
   auth_token: process.env.TWILIO_AUTH_TOKEN,
@@ -96,11 +98,122 @@ function getRoomFromRoomListUsingLevensheinDistance(query) {
   }
 
   // only tolerate a threshold distance, otherwise gobbledigook will match
-  if (bestDistance <= 3) {
+  if (bestDistance <= levenThreshold) {
     return bestMatch;
   } else {
     return null;
   }
+}
+
+function followUpWithPicsIfAvailable(roomObj, convo, message) {
+  if ('img' in roomObj) {
+    console.log('following up');
+    setTimeout(() => {
+      followUpWithPics(roomObj, convo, message);
+    }, 1000 * 5);
+  } else {
+    console.log('not following up');
+  }
+}
+
+function getFollowUpCopy(roomPic, roomMap) {
+  if (roomPic && roomMap) {
+    return `Need more help? Reply 'P' for a picture of the room, or 'M' for a map.`;
+  } else if (roomPic) {
+    return `Need more help? Reply 'P' for a picture of the room.`;
+  } else if (roomMap) {
+    return `Need more help? Reply 'M' for a map of the room.`;
+  }
+
+  return null;
+}
+
+function followUpWithPics(roomObj, convo, message) {
+  const roomPic = 'pic' in roomObj.img === true;
+  const roomMap = 'map' in roomObj.img === true;
+
+  const followUpCopy = getFollowUpCopy(roomPic, roomMap);
+
+  let responseArray = [
+    {
+      default: true,
+      callback: (res, convo) => {
+        convo.next();
+      }
+    }
+  ];
+
+  if (roomPic) {
+    responseArray.push({
+      pattern: /^(picture|pic|p|P)/i,
+      callback: (res, convo) => {
+        logQuestionAnswered(res.text, message.to);
+
+        const messageToSend = 'Picture!';
+        logMessageSent(messageToSend, message.from);
+        convo.say(messageToSend);
+        convo.next();
+      }
+    });
+  }
+
+  if (roomMap) {
+    responseArray.push({
+      pattern: /^(map|m|M)/i,
+      callback: (res, convo) => {
+        logQuestionAnswered(res.text, message.to);
+
+        const messageToSend = 'Map!';
+        logMessageSent(messageToSend, message.from);
+        convo.say(messageToSend);
+        convo.next();
+      }
+    });
+  }
+
+  console.log('followUpCopy', followUpCopy);
+  console.log('responseArray', responseArray);
+
+  convo.ask(followUpCopy, responseArray);
+}
+
+function sendFollowUpCopy(copy, convo) {
+  logQuestionAsked(copy, message.from);
+  convo.ask(copy, [
+    {
+      pattern: /^(picture|pic|p|P)/i,
+      callback: (res, convo) => {
+        logQuestionAnswered(res.text, message.to);
+
+        const messageToSend = roomObj.location;
+        logMessageSent(messageToSend, message.from);
+        convo.say(messageToSend);
+        convo.next();
+      }
+    },
+    {
+      pattern: /^(map|m|M)/i,
+      callback: (res, convo) => {
+        logQuestionAnswered(res.text, message.to);
+
+        const messageToSend = `Unfortunately, I don't understand what you're asking. Maybe try asking a different way, or check your spelling! 🤷‍`;
+        logMessageSent(messageToSend, message.from);
+        convo.say(messageToSend);
+        convo.next();
+      }
+    },
+    {
+      default: true,
+      callback: (res, convo) => {
+        logQuestionAnswered(res.text, message.to);
+
+        const messageToSend = `I don't understand. Maybe try asking a different way!`;
+        logMessageSent(messageToSend, message.from);
+        convo.say(messageToSend);
+        convo.next();
+      }
+    }
+  ]);
 }
 
 module.exports = function(app) {
@@ -110,23 +223,30 @@ module.exports = function(app) {
   });
 
   controller.hears(roomList, 'message_received', (bot, message) => {
-    logMessageReceived(message);
-    if (!!message.match && message.match.length > 0) {
-      const roomObj = getRoomFromRoomList(message.match[0]);
-      if (roomObj && roomObj.location) {
-        replyToMessage(message, roomObj.location);
-      } else {
-        replyToMessage(
-          message,
-          `Sorry, I'm not sure where that is. Maybe ask Eddie?`
-        );
+    bot.startConversation(message, (err, convo) => {
+      logMessageReceived(message);
+      let roomFound = false;
+
+      if (!!message.match && message.match.length > 0) {
+        const roomObj = getRoomFromRoomList(message.match[0]);
+
+        if (roomObj && roomObj.location) {
+          roomFound = true;
+          const messageToSend = roomObj.location;
+          logMessageSent(messageToSend, message.from);
+          convo.say(messageToSend);
+
+          followUpWithPicsIfAvailable(roomObj, convo, message); // give the option of sending a picture or a map of the room, if available
+        }
       }
-    } else {
-      replyToMessage(
-        message,
-        `Sorry, I'm not sure where that is. Maybe ask Eddie?`
-      );
-    }
+
+      if (roomFound !== true) {
+        const messageToSend = `Sorry, I'm not sure where that is. Maybe ask Eddie?`;
+        logMessageSent(messageToSend, message.from);
+        convo.say(messageToSend);
+        convo.next();
+      }
+    });
   });
 
   controller.hears(
@@ -136,10 +256,18 @@ module.exports = function(app) {
       logMessageReceived(message);
       replyToMessage(
         message,
-        `Hi there! I'm Carmen, a chatbot made by Moonshot to help you find any room in the building. To use me, just ask, "Where's Uranus", for example.`
+        `Hi there. I'm Carmen, a chatbot made by Moonshot to help you find any room in the building. To use me, just ask, "Where's Uranus", for example.`
       );
     }
   );
+
+  // controller.hears(['help', 'commands'], 'message_received', (bot, message) => {
+  //   logMessageReceived(message);
+  //   replyToMessage(
+  //     message,
+  //     `Hi there. I'm Carmen, a chatbot made by Moonshot to help you find any room in the building. You can ask me how to find any room in the building. You can also just send me the name of the room. Add `
+  //   );
+  // });
 
   controller.hears(
     ['thanks', 'thank you'],
@@ -157,7 +285,7 @@ module.exports = function(app) {
       const roomObj = getRoomFromRoomListUsingLevensheinDistance(query);
 
       if (roomObj !== null) {
-        const question = `I'm not exactly sure what you meant. Where you asking how to find ${roomObj.name}?`;
+        const question = `I'm not exactly sure what you meant. Were you asking how to find ${roomObj.name}?`;
         logQuestionAsked(question, message.from);
         convo.ask(question, [
           {

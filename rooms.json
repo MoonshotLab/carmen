@@ -1,155 +1,306 @@
 [
   {
     "name": "Apollo",
-    "location": "Apollo is on the 1st floor, at the end of the hall that goes by the gym. The door into that hall is just to the left of the elevators on 1, or you can take the stairs all the way down. If you're coming out of an elevator, make a right and another right. Or, if you don't know left from right, apply for a job on the senior leadership team. Haha, I'm subversive!"
+    "location": "Apollo is on the 1st floor, at the end of the hall that goes by the gym. The door into that hall is just to the left of the elevators on 1, or you can take the stairs all the way down. If you're coming out of an elevator, make a right and another right. Or, if you don't know left from right, apply for a job on the senior leadership team. Haha, I'm subversive!",
+    "img": {
+      "pic": "/img/rooms/apollo-pic.jpg",
+      "map": "/img/rooms/apollo-map.jpg"
+    }
   },
   {
     "name": "Galaxy",
-    "location": "Galaxy is on the 1st floor, the first room on the left down the hallway next to the elevators. Don't forget your keycard, which you'll need to get into that hallway. Or, you can just take the stairs down from the second floor. Shh, don't tell whoever's supposed to be kept out of that area."
+    "location": "Galaxy is on the 1st floor, the first room on the left down the hallway next to the elevators. Don't forget your keycard, which you'll need to get into that hallway. Or, you can just take the stairs down from the second floor. Shh, don't tell whoever's supposed to be kept out of that area.",
+    "img": {
+      "pic": "/img/rooms/galaxy-pic.jpg",
+      "map": "/img/rooms/galaxy-map.jpg"
+    }
   },
   {
     "name": "Gym",
-    "location": "The gym is on the 1st floor, just down from Galaxy. It's on the right side of the hall after entering the door by the elevators. Please, get your wet towel out of there, it's starting to stink."
+    "location": "The gym is on the 1st floor, just down from Galaxy. It's on the right side of the hall after entering the door by the elevators. Please, get your wet towel out of there, it's starting to stink.",
+    "img": {
+      "pic": "/img/rooms/gym-pic.jpg",
+      "map": "/img/rooms/gym-map.jpg"
+    }
   },
   {
     "name": "Spray Room",
-    "location": "The spray room is on the 1st floor, in the northwest corner. Go through the door next to the elevators. Then follow your nose—although, in a way, aren't you always doing that? "
+    "location": "The spray room is on the 1st floor, in the northwest corner. Go through the door next to the elevators. Then follow your nose—although, in a way, aren't you always doing that? ",
+    "img": {
+      "pic": "/img/rooms/spray-room-pic.jpg",
+      "map": "/img/rooms/spray-room-map.jpg"
+    }
   },
   {
     "name": "Albert II",
-    "location": "Albert II is on the 2nd floor, in corner of the Collective Studio. It's on the Baltimore side, next to Gus Grissom."
+    "location": "Albert II is on the 2nd floor, in corner of the Collective Studio. It's on the Baltimore side, next to Gus Grissom.",
+    "img": {
+      "pic": "/img/rooms/albert-ii-pic.jpg",
+      "map": "/img/rooms/albert-ii-map.jpg"
+    }
   },
   {
     "name": "Buzz Aldrin",
-    "location": "Buzz Aldrin is on the 2nd floor, in the corner of Collective Studio closest to 18th and Baltimore. To infinity and beyond! Or was that another Buzz?"
+    "location": "Buzz Aldrin is on the 2nd floor, in the corner of Collective Studio closest to 18th and Baltimore. To infinity and beyond! Or was that another Buzz?",
+    "img": {
+      "pic": "/img/rooms/buzz-aldrin-pic.jpg",
+      "map": "/img/rooms/buzz-aldrin-map.jpg"
+    }
   },
   {
     "name": "Ellen Ochoa",
-    "location": "Ellen Ochoa is on the 2nd floor, in Crossroads, just north of the Baltimore entrance. This is a nice big room with a nice big blackboard. For some reason, wireless connections are sometimes iffy here."
+    "location": "Ellen Ochoa is on the 2nd floor, in Crossroads, just north of the Baltimore entrance. This is a nice big room with a nice big blackboard. For some reason, wireless connections are sometimes iffy here.",
+    "img": {
+      "pic": "/img/rooms/ellen-ochoa-pic.jpg",
+      "map": "/img/rooms/ellen-ochoa-map.jpg"
+    }
   },
   {
     "name": "Gus Grissom",
-    "location": "Gus Grissom is on the 2nd floor. It's the large conference room on the west side near the southwest corner. If the sliding doors are closed, stand at the very center to pull them open. Some people get confused when trying to open them from one side or other, and they end up just standing there, looking sad."
+    "location": "Gus Grissom is on the 2nd floor. It's the large conference room on the west side near the southwest corner. If the sliding doors are closed, stand at the very center to pull them open. Some people get confused when trying to open them from one side or other, and they end up just standing there, looking sad.",
+    "img": {
+      "pic": "/img/rooms/gus-grissom-pic.jpg",
+      "map": "/img/rooms/gus-grissom-map.jpg"
+    }
   },
   {
     "name": "Mark Kelly",
-    "location": "Mark Kelly is on the 2nd floor, immediately north of the Baltimore entrance, in Crossroads. Like many 2nd-floor rooms, it's named for a famous astronaut."
+    "location": "Mark Kelly is on the 2nd floor, immediately north of the Baltimore entrance, in Crossroads. Like many 2nd-floor rooms, it's named for a famous astronaut.",
+    "img": {
+      "pic": "/img/rooms/mark-kelly-pic.jpg",
+      "map": "/img/rooms/mark-kelly-map.jpg"
+    }
   },
   {
     "name": "Neil Armstrong",
-    "location": "Neil Armstrong is on the 2nd floor, on the Main Street side of the building. It's one small step away from the Account team, a giant leap from the 4th-floor beer taps."
+    "location": "Neil Armstrong is on the 2nd floor, on the Main Street side of the building. It's one small step away from the Account team, a giant leap from the 4th-floor beer taps.",
+    "img": {
+      "pic": "/img/rooms/neil-armstrong-pic.jpg",
+      "map": "/img/rooms/neil-armstrong-map.jpg"
+    }
   },
   {
     "name": "Sally Ride",
-    "location": "Sally Ride is a corner room on the 2nd floor, on the Main Street side, across from our parking garage. It's wiithin shouting distance of the person leaving an unwashed dish in the sink of the 2nd-floor kitchen. And anyone doing that deserves to be shouted at."
+    "location": "Sally Ride is a corner room on the 2nd floor, on the Main Street side, across from our parking garage. It's wiithin shouting distance of the person leaving an unwashed dish in the sink of the 2nd-floor kitchen. And anyone doing that deserves to be shouted at.",
+    "img": {
+      "pic": "/img/rooms/sally-ride-pic.jpg",
+      "map": "/img/rooms/sally-ride-map.jpg"
+    }
   },
   {
     "name": "Han Solo",
-    "location": "Han Solo is on the 2nd floor, in the Collective Studio, on the Baltimore street side of the building. It's next door to Gus Grissom, demonstrating how fiction and reality co-exist."
+    "location": "Han Solo is on the 2nd floor, in the Collective Studio, on the Baltimore street side of the building. It's next door to Gus Grissom, demonstrating how fiction and reality co-exist.",
+    "img": {
+      "pic": "/img/rooms/han-solo-pic.jpg",
+      "map": "/img/rooms/han-solo-map.jpg"
+    }
   },
   {
     "name": "Chewie",
-    "location": "Chewie is on the 2nd floor, in the Collective Studio, on the Baltimore street side of the building. Chewie is close to Han Solo (duh)."
+    "location": "Chewie is on the 2nd floor, in the Collective Studio, on the Baltimore street side of the building. Chewie is close to Han Solo (duh).",
+    "img": {
+      "pic": "/img/rooms/chewie-pic.jpg",
+      "map": "/img/rooms/chewie-map.jpg"
+    }
   },
   {
     "name": "Laika",
-    "location": "Laika is on the 2nd floor, near the central stairwell—not so much a room as a viewing area with a large TV, right by a pair of beer taps. So maybe it's really a sports bar? "
+    "location": "Laika is on the 2nd floor, near the central stairwell—not so much a room as a viewing area with a large TV, right by a pair of beer taps. So maybe it's really a sports bar? ",
+    "img": {
+      "pic": "/img/rooms/laika-pic.jpg",
+      "map": "/img/rooms/laika-map.jpg"
+    }
   },
   {
     "name": "Tsygan",
-    "location": "Tsygan is on the 2nd floor, in the corridor to the Balitmore exit. It's a booth with a table. Go ahead, try to get a waiter."
+    "location": "Tsygan is on the 2nd floor, in the corridor to the Balitmore exit. It's a booth with a table. Go ahead, try to get a waiter.",
+    "img": {
+      "pic": "/img/rooms/tsygan-pic.jpg",
+      "map": "/img/rooms/tsygan-map.jpg"
+    }
   },
   {
     "name": "Dyzik",
-    "location": "Dyzik is on the 2nd floor, in the corridor to the Baltimore exit. It's a booth with a table. Dyzik (sometimes spelled Desik) and its twin, Tsygan, are named for cosmonaut dogs."
+    "location": "Dyzik is on the 2nd floor, in the corridor to the Baltimore exit. It's a booth with a table. Dyzik (sometimes spelled Desik) and its twin, Tsygan, are named for cosmonaut dogs.",
+    "img": {
+      "map": "/img/rooms/dyzik-map.jpg"
+    }
   },
   {
     "name": "The City Dump",
-    "location": "The City Dump is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building."
+    "location": "The City Dump is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
+    "img": {
+      "pic": "/img/rooms/the-city-dump-pic.jpg",
+      "map": "/img/rooms/the-city-dump-map.jpg"
+    }
   },
   {
     "name": "The Stadium",
-    "location": "The Stadium is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building."
+    "location": "The Stadium is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
+    "img": {
+      "pic": "/img/rooms/the-stadium-pic.jpg",
+      "map": "/img/rooms/the-stadium-map.jpg"
+    }
   },
   {
     "name": "The Court House",
-    "location": "The Court House is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building."
+    "location": "The Court House is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
+    "img": {
+      "pic": "/img/rooms/the-court-house-pic.jpg",
+      "map": "/img/rooms/the-court-house-map.jpg"
+    }
   },
   {
     "name": "The City Plaza",
-    "location": "The City Plaza is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building."
+    "location": "The City Plaza is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
+    "img": {
+      "pic": "/img/rooms/the-city-plaza-pic.jpg",
+      "map": "/img/rooms/the-city-plaza-map.jpg"
+    }
   },
   {
     "name": "Judy Jetson",
-    "location": "The room formerly known as Judy Jetson is on the 2nd floor in the Collective Studio. Currently it's being used as the private office for a fellow named Wesley Blue."
+    "location": "The room formerly known as Judy Jetson is on the 2nd floor in the Collective Studio. Currently it's being used as the private office for a fellow named Wesley Blue.",
+    "img": {
+      "pic": "/img/rooms/judy-jetson-pic.jpg",
+      "map": "/img/rooms/judy-jetson-map.jpg"
+    }
   },
   {
     "name": "Jane Jetson",
-    "location": "Jane Jetson is on the 2nd floor, right next door to George, on the Main street side, near the Account team."
+    "location": "Jane Jetson is on the 2nd floor, right next door to George, on the Main street side, near the Account team.",
+    "img": {
+      "pic": "/img/rooms/jane-jetson-pic.jpg",
+      "map": "/img/rooms/jane-jetson-map.jpg"
+    }
   },
   {
     "name": "George Jetson",
-    "location": "George Jetson is on the 2nd floor, right next door to Jane, on the Main street side, near the Account team."
+    "location": "George Jetson is on the 2nd floor, right next door to Jane, on the Main street side, near the Account team.",
+    "img": {
+      "pic": "/img/rooms/george-jetson-pic.jpg",
+      "map": "/img/rooms/george-jetson-map.jpg"
+    }
   },
   {
     "name": "Mortis",
-    "location": "Mortis is on the 2nd floor, in 40Digits. You'd think it would be next door to Rigor, but it's not. It's next door to the Millennium Falcon room."
+    "location": "Mortis is on the 2nd floor, in 40Digits. You'd think it would be next door to Rigor, but it's not. It's next door to the Millennium Falcon room.",
+    "img": {
+      "pic": "/img/rooms/mortis-pic.jpg",
+      "map": "/img/rooms/mortis-map.jpg"
+    }
   },
   {
     "name": "Millennium Falcon",
-    "location": "Millennium Falcon is on the 2nd floor, in 40Digits, just past a room called Mortis."
+    "location": "Millennium Falcon is on the 2nd floor, in 40Digits, just past a room called Mortis.",
+    "img": {
+      "pic": "/img/rooms/millennium-falcon-pic.jpg",
+      "map": "/img/rooms/millennium-falcon-map.jpg"
+    }
   },
   {
     "name": "Er'kit",
-    "location": "Er'kit is on the 2nd floor, in the 40Digits space. Go down the hallway to the left of the elevators (as you look at them), then keep on walking until you see the developers. They're the ones wearing hoodies and thinking in binary."
+    "location": "Er'kit is on the 2nd floor, in the 40Digits space. Go down the hallway to the left of the elevators (as you look at them), then keep on walking until you see the developers. They're the ones wearing hoodies and thinking in binary.",
+    "img": {
+      "pic": "/img/rooms/erkit-pic.jpg",
+      "map": "/img/rooms/erkit-map.jpg"
+    }
   },
   {
     "name": "Astro",
-    "location": "Astro is the small room on the 3rd floor, to the right of the elevators as you face them."
+    "location": "Astro is the small room on the 3rd floor, to the right of the elevators as you face them.",
+    "img": {
+      "pic": "/img/rooms/astro-pic.jpg",
+      "map": "/img/rooms/astro-map.jpg"
+    }
   },
   {
     "name": "Eris",
-    "location": "Eris is the nice little alcove on the 3rd floor, right next to Astro, to the right of the elevators as you face them."
+    "location": "Eris is the nice little alcove on the 3rd floor, right next to Astro, to the right of the elevators as you face them.",
+    "img": {
+      "pic": "/img/rooms/eris-pic.jpg",
+      "map": "/img/rooms/eris-map.jpg"
+    }
   },
   {
     "name": "Jupiter",
-    "location": "Jupiter is a conference room on the 3rd floor, just behind the top of the stairs coming up from the 2nd floor."
+    "location": "Jupiter is a conference room on the 3rd floor, just behind the top of the stairs coming up from the 2nd floor.",
+    "img": {
+      "pic": "/img/rooms/jupiter-pic.jpg",
+      "map": "/img/rooms/jupiter-map.jpg"
+    }
   },
   {
     "name": "Saturn",
-    "location": "Saturn is on the 3rd floor, near the top of the stairs coming up from the second floor, near Social."
+    "location": "Saturn is on the 3rd floor, near the top of the stairs coming up from the second floor, near Social.",
+    "img": {
+      "pic": "/img/rooms/saturn-pic.jpg",
+      "map": "/img/rooms/saturn-map.jpg"
+    }
   },
   {
     "name": "Mars",
-    "location": "Mars is on the 3rd floor, near the Social team. It's in the corner that faces Main Street and our parking garage."
+    "location": "Mars is on the 3rd floor, near the Social team. It's in the corner that faces Main Street and our parking garage.",
+    "img": {
+      "pic": "/img/rooms/mars-pic.jpg",
+      "map": "/img/rooms/mars-map.jpg"
+    }
   },
   {
     "name": "Mr. Spacely",
-    "location": "Mr. Spacely is on the 3rd floor, on the Main Street side of the building, near Social."
+    "location": "Mr. Spacely is on the 3rd floor, on the Main Street side of the building, near Social.",
+    "img": {
+      "pic": "/img/rooms/mr-spacely-pic.jpg",
+      "map": "/img/rooms/mr-spacely-map.jpg"
+    }
   },
   {
     "name": "Rosie",
-    "location": "Rosie is on the 3rd floor, on the Main Street side of the building, near Social. Rosie houses the Tim Galles library."
+    "location": "Rosie is on the 3rd floor, on the Main Street side of the building, near Social. Rosie houses the Tim Galles library.",
+    "img": {
+      "pic": "/img/rooms/rosie-pic.jpg",
+      "map": "/img/rooms/rosie-map.jpg"
+    }
   },
   {
     "name": "Earth",
-    "location": "Earth is on the 3rd floor, in the southeast corner. It is famous for being too hot or too cold and smelling perpetually of armpit."
+    "location": "Earth is on the 3rd floor, in the southeast corner. It is famous for being too hot or too cold and smelling perpetually of armpit.",
+    "img": {
+      "pic": "/img/rooms/earth-pic.jpg",
+      "map": "/img/rooms/earth-map.jpg"
+    }
   },
   {
     "name": "Mercury",
-    "location": "Mercury is on the 3rd floor, on the Baltimore side of the building, in the far corner."
+    "location": "Mercury is on the 3rd floor, on the Baltimore side of the building, in the far corner.",
+    "img": {
+      "pic": "/img/rooms/mercury-pic.jpg",
+      "map": "/img/rooms/mercury-map.jpg"
+    }
   },
   {
     "name": "Venus",
-    "location": "Venus is on the 3rd floor, on the Baltimore side of the building, right next to Mercury."
+    "location": "Venus is on the 3rd floor, on the Baltimore side of the building, right next to Mercury.",
+    "img": {
+      "pic": "/img/rooms/venus-pic.jpg",
+      "map": "/img/rooms/venus-map.jpg"
+    }
   },
   {
     "name": "Uranus",
-    "location": "If you don't know, I'm not telling you. (Just kidding. Uranus is on the 3rd floor on the Baltimore Street side of the building. Weirdly, Uranus is next to Venus.)"
+    "location": "If you don't know, I'm not telling you. (Just kidding. Uranus is on the 3rd floor on the Baltimore Street side of the building. Weirdly, Uranus is next to Venus.)",
+    "img": {
+      "pic": "/img/rooms/uranus-pic.jpg",
+      "map": "/img/rooms/uranus-map.jpg"
+    }
   },
   {
     "name": "Neptune",
-    "location": "Neptune is on the 3rd floor, in the corner that overlooks 18th Street and Baltimore."
+    "location": "Neptune is on the 3rd floor, in the corner that overlooks 18th Street and Baltimore.",
+    "img": {
+      "pic": "/img/rooms/neptune-pic.jpg",
+      "map": "/img/rooms/neptune-map.jpg"
+    }
   },
   {
     "name": "Big Dipper",
@@ -157,51 +308,99 @@
   },
   {
     "name": "Sun",
-    "location": "Sun is on the 3rd floor, to the right of the elevators as you face them, between Eris and Jupiter."
+    "location": "Sun is on the 3rd floor, to the right of the elevators as you face them, between Eris and Jupiter.",
+    "img": {
+      "pic": "/img/rooms/sun-pic.jpg",
+      "map": "/img/rooms/sun-map.jpg"
+    }
   },
   {
     "name": "Calvera",
-    "location": "Calvera is the odd angular structure on the 3rd floor, right next to Moonshot. There, you might find yourself swimming with a whale, or walking a plank, or shooting some robots in outer space. Don't know what I'm talking about? Reach out to Moonshot and they'll show you a great time. "
+    "location": "Calvera is the odd angular structure on the 3rd floor, right next to Moonshot. There, you might find yourself swimming with a whale, or walking a plank, or shooting some robots in outer space. Don't know what I'm talking about? Reach out to Moonshot and they'll show you a great time. ",
+    "img": {
+      "pic": "/img/rooms/calvera-pic.jpg",
+      "map": "/img/rooms/calvera-map.jpg"
+    }
   },
   {
     "name": "Michael Bay",
-    "location": "Michael Bay is one of the video team edit bays on the 3rd floor, right next to Moonshot. It's the one with all the lens flare and explosions."
+    "location": "Michael Bay is one of the video team edit bays on the 3rd floor, right next to Moonshot. It's the one with all the lens flare and explosions.",
+    "img": {
+      "pic": "/img/rooms/michael-bay-pic.jpg",
+      "map": "/img/rooms/michael-bay-map.jpg"
+    }
   },
   {
     "name": "Bay Romano",
-    "location": "Bay Romano is one of the video team edit bays on the 3rd floor, right next to Production. Everybody loves Baymond."
+    "location": "Bay Romano is one of the video team edit bays on the 3rd floor, right next to Production. Everybody loves Baymond.",
+    "img": {
+      "pic": "/img/rooms/bay-romano-pic.jpg",
+      "map": "/img/rooms/bay-romano-map.jpg"
+    }
   },
   {
     "name": "Rocket Fuel",
-    "location": "Rocket Fuel is the kitchen on the Baltimore Street side of the 3rd floor. There's no actual coffee there, so the name is a total fake-out. (I think there's a Keurig machine in there, but whether or not that's considered coffee is debatable.)"
+    "location": "Rocket Fuel is the kitchen on the Baltimore Street side of the 3rd floor. There's no actual coffee there, so the name is a total fake-out. (I think there's a Keurig machine in there, but whether or not that's considered coffee is debatable.)",
+    "img": {
+      "pic": "/img/rooms/rocket-fuel-pic.jpg",
+      "map": "/img/rooms/rocket-fuel-map.jpg"
+    }
   },
   {
     "name": "Blue Lounge",
-    "location": "The Blue Lounge is on the 4th floor, in a corner on the Baltimore Street side, right by Flight Deck. "
+    "location": "The Blue Lounge is on the 4th floor, in a corner on the Baltimore Street side, right by Flight Deck. ",
+    "img": {
+      "pic": "/img/rooms/blue-lounge-pic.jpg",
+      "map": "/img/rooms/blue-lounge-map.jpg"
+    }
   },
   {
     "name": "Magenta Lounge",
-    "location": "The Magenta Lounge is on the 4th floor, near the Southeast corner, just inside of the doors to the rooftop deck."
+    "location": "The Magenta Lounge is on the 4th floor, near the Southeast corner, just inside of the doors to the rooftop deck.",
+    "img": {
+      "pic": "/img/rooms/magenta-lounge-pic.jpg",
+      "map": "/img/rooms/magenta-lounge-map.jpg"
+    }
   },
   {
     "name": "Green Lounge",
-    "location": "The Green Lounge is the stage on the 4th floor, right in the middle."
+    "location": "The Green Lounge is the stage on the 4th floor, right in the middle.",
+    "img": {
+      "pic": "/img/rooms/green-lounge-pic.jpg",
+      "map": "/img/rooms/green-lounge-map.jpg"
+    }
   },
   {
     "name": "Black Lounge",
-    "location": "The Black Lounge is on the 4th floor, overlooking 18th and Baltimore, right next to the Magenta Lounge, behind the ropes."
+    "location": "The Black Lounge is on the 4th floor, overlooking 18th and Baltimore, right next to the Magenta Lounge, behind the ropes.",
+    "img": {
+      "pic": "/img/rooms/black-lounge-pic.jpg",
+      "map": "/img/rooms/black-lounge-map.jpg"
+    }
   },
   {
     "name": "Flight Deck",
-    "location": "The Flight Deck is the board room on the 4th floor. If you're facing the elevators, it's to your left."
+    "location": "The Flight Deck is the board room on the 4th floor. If you're facing the elevators, it's to your left.",
+    "img": {
+      "pic": "/img/rooms/flight-deck-pic.jpg",
+      "map": "/img/rooms/flight-deck-map.jpg"
+    }
   },
   {
     "name": "Kitchen Table",
-    "location": "The Kitchen Table is the long wooden table on the 4th floor."
+    "location": "The Kitchen Table is the long wooden table on the 4th floor.",
+    "img": {
+      "pic": "/img/rooms/kitchen-table-pic.jpg",
+      "map": "/img/rooms/kitchen-table-map.jpg"
+    }
   },
   {
     "name": "Zen Rooms",
-    "location": "The Zen Rooms are on the 4th floor, at the top of the stairs, with the red doors. If you want to work with the door closed, which is kind of the point, be sure to turn on the red light. You don't have to turn on the red light, Roxanne. But in this case, you should."
+    "location": "The Zen Rooms are on the 4th floor, at the top of the stairs, with the red doors. If you want to work with the door closed, which is kind of the point, be sure to turn on the red light. You don't have to turn on the red light, Roxanne. But in this case, you should.",
+    "img": {
+      "pic": "/img/rooms/zen-rooms-pic.jpg",
+      "map": "/img/rooms/zen-rooms-map.jpg"
+    }
   },
   {
     "name": "The Room of Requirement",
