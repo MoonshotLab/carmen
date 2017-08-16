@@ -5,7 +5,7 @@ const path = require('path');
 const Promise = require('bluebird');
 const moment = require('moment');
 
-const logPath = './public/logs/test.log';
+const logPath = './public/logs/conversation.log';
 
 const rooms = require('./rooms.json');
 const roomList = rooms.map(roomObj => roomObj.name);
@@ -15,7 +15,8 @@ const levenThreshold = 5;
 const controller = TwilioSMSBot({
   account_sid: process.env.TWILIO_ACCOUNT_SID,
   auth_token: process.env.TWILIO_AUTH_TOKEN,
-  twilio_number: process.env.TWILIO_NUMBER
+  twilio_number: process.env.TWILIO_NUMBER,
+  json_file_store: 'public/logs/conversation/'
 });
 const bot = controller.spawn({});
 
@@ -32,6 +33,10 @@ function log(str) {
 
     resolve();
   });
+}
+
+function logImageSent(url, to) {
+  log(`Sent image '${url}' to ${to}`);
 }
 
 function logMessageReceived(message) {
@@ -107,12 +112,7 @@ function getRoomFromRoomListUsingLevensheinDistance(query) {
 
 function followUpWithPicsIfAvailable(roomObj, convo, message) {
   if ('img' in roomObj) {
-    console.log('following up');
-    setTimeout(() => {
-      followUpWithPics(roomObj, convo, message);
-    }, 1000 * 5);
-  } else {
-    console.log('not following up');
+    followUpWithPics(roomObj, convo, message);
   }
 }
 
@@ -147,11 +147,15 @@ function followUpWithPics(roomObj, convo, message) {
     responseArray.push({
       pattern: /^(picture|pic|p|P)/i,
       callback: (res, convo) => {
-        logQuestionAnswered(res.text, message.to);
+        const imgUrl = `${process.env.SITE_URL}/${roomObj.img.pic}`;
+        logImageSent(imgUrl, message.from);
+        convo.say(
+          'Coming your way! Images take a moment to send, so please be patient.'
+        );
 
-        const messageToSend = 'Picture!';
-        logMessageSent(messageToSend, message.from);
-        convo.say(messageToSend);
+        convo.context.bot.reply(message, {
+          mediaUrl: imgUrl
+        });
         convo.next();
       }
     });
@@ -161,18 +165,19 @@ function followUpWithPics(roomObj, convo, message) {
     responseArray.push({
       pattern: /^(map|m|M)/i,
       callback: (res, convo) => {
-        logQuestionAnswered(res.text, message.to);
+        const imgUrl = `${process.env.SITE_URL}/${roomObj.img.map}`;
+        logImageSent(imgUrl, message.from);
+        convo.say(
+          'Coming your way! Images take a moment to send, so please be patient.'
+        );
 
-        const messageToSend = 'Map!';
-        logMessageSent(messageToSend, message.from);
-        convo.say(messageToSend);
+        convo.context.bot.reply(message, {
+          mediaUrl: imgUrl
+        });
         convo.next();
       }
     });
   }
-
-  console.log('followUpCopy', followUpCopy);
-  console.log('responseArray', responseArray);
 
   convo.ask(followUpCopy, responseArray);
 }
@@ -235,7 +240,8 @@ module.exports = function(app) {
           const messageToSend = roomObj.location;
           logMessageSent(messageToSend, message.from);
           convo.say(messageToSend);
-
+          // bot.say('hi hi');
+          // convo.say(messageToSend);
           followUpWithPicsIfAvailable(roomObj, convo, message); // give the option of sending a picture or a map of the room, if available
         }
       }
@@ -256,7 +262,7 @@ module.exports = function(app) {
       logMessageReceived(message);
       replyToMessage(
         message,
-        `Hi there. I'm Carmen, a chatbot made by Moonshot to help you find any room in the building. To use me, just ask, "Where's Uranus", for example.`
+        `Hi there. I'm Carmen, a chatbot made by Moonshot to help you find any room in the building. To use me, just ask, "Where's Uranus?", for example.`
       );
     }
   );
