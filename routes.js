@@ -10,7 +10,14 @@ router.get('/', function(req, res) {
 });
 
 router.get('/logs/:name', function(req, res) {
-  const fileRoot = __dirname + '/tmp/data';
+  let fileRoot;
+
+  if (process.env.NODE_ENV === 'dev') {
+    fileRoot = __dirname + '/tmp/data';
+  } else {
+    fileRoot = '/tmp/data';
+  }
+
   const options = {
     root: fileRoot,
     dotfiles: 'deny',
