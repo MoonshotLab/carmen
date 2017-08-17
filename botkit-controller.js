@@ -53,6 +53,7 @@ function log(str) {
 }
 
 function logFeedbackReceived(message) {
+  log(`Received feedback '${message.text}' from ${message.from}`);
   logFeedback(`Received feedback '${message.text}' from ${message.from}`);
 }
 
