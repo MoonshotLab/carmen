@@ -5,8 +5,8 @@ const path = require('path');
 const Promise = require('bluebird');
 const moment = require('moment');
 
-const logPath = './public/logs/conversation.log';
-const feedbackPath = './public/logs/feedback.log';
+const logPath = '/tmp/data/conversation.log';
+const feedbackPath = '/tmp/data/feedback.log';
 
 const rooms = require('./rooms.json');
 const roomList = rooms.map(roomObj => roomObj.name);
@@ -17,7 +17,7 @@ const controller = TwilioSMSBot({
   account_sid: process.env.TWILIO_ACCOUNT_SID,
   auth_token: process.env.TWILIO_AUTH_TOKEN,
   twilio_number: process.env.TWILIO_NUMBER,
-  json_file_store: 'public/logs/conversation/'
+  json_file_store: '/tmp/data/conversation/'
 });
 const bot = controller.spawn({});
 let lastRoom = null; // keep track of the last room user asked about
