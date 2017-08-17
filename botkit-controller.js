@@ -250,6 +250,15 @@ module.exports = function(app) {
     log('TwilioSMSBot is online!');
   });
 
+  controller.hears(
+    ['feedback', 'suggestion'],
+    'message_received',
+    (bot, message) => {
+      logFeedbackReceived(message);
+      replyToMessage(message, `Thanks for the suggestion!`);
+    }
+  );
+
   controller.hears(roomList, 'message_received', (bot, message) => {
     bot.startConversation(message, (err, convo) => {
       logMessageReceived(message);
@@ -305,15 +314,6 @@ module.exports = function(app) {
     (bot, message) => {
       logMessageReceived(message);
       replyToMessage(message, `You're welcome!`);
-    }
-  );
-
-  controller.hears(
-    ['feedback', 'suggestion'],
-    'message_received',
-    (bot, message) => {
-      logFeedbackReceived(message);
-      replyToMessage(message, `Thanks for the suggestion!`);
     }
   );
 
