@@ -29,7 +29,7 @@ function logFeedback(str) {
   logStr += '\n';
 
   return new Promise((resolve, reject) => {
-    fs.appendFile(logPath, logStr, err => {
+    fs.appendFile(feedbackPath, logStr, err => {
       reject(err);
     });
 
