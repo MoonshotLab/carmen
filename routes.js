@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const fs = require('fs');
 
 router.get('/', function(req, res) {
   res.render('index', {
@@ -8,27 +9,29 @@ router.get('/', function(req, res) {
   });
 });
 
-router.get('/admin', function(req, res) {
-  res.render('admin');
-});
+router.get('/logs/:name', function(req, res) {
+  const fileRoot = __dirname + '/tmp/data';
+  const options = {
+    root: fileRoot,
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true
+    }
+  };
 
-router.get('/login', function(req, res) {
-  res.render('login', { flash: req.flash() });
-});
-
-router.post('/login', function(req, res, next) {
-  if (req.body.password && req.body.password === process.env.PASSWORD) {
-    req.session.authenticated = true;
-    res.redirect('/admin');
+  const fileName = req.params.name;
+  if (fs.existsSync(`${fileRoot}/${fileName}`)) {
+    res.sendFile(fileName, options, function(err) {
+      if (err) {
+        next(err);
+      } else {
+        console.log('Sent:', fileName);
+      }
+    });
   } else {
-    req.flash('error', 'Incorrect username / password');
-    res.redirect('/login');
+    res.sendStatus(404);
   }
-});
-
-router.get('/logout', function(req, res, next) {
-  delete req.session.authenticated;
-  res.redirect('/');
 });
 
 module.exports = router;
