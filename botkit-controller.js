@@ -6,6 +6,7 @@ const Promise = require('bluebird');
 const moment = require('moment');
 
 const logPath = './public/logs/conversation.log';
+const feedbackPath = './public/logs/feedback.log';
 
 const rooms = require('./rooms.json');
 const roomList = rooms.map(roomObj => roomObj.name);
@@ -21,6 +22,21 @@ const controller = TwilioSMSBot({
 const bot = controller.spawn({});
 let lastRoom = null; // keep track of the last room user asked about
 
+function logFeedback(str) {
+  let logStr = `[${moment().format('MM/DD/YY HH:mm:ss')}] ${str}`;
+  console.log(logStr);
+
+  logStr += '\n';
+
+  return new Promise((resolve, reject) => {
+    fs.appendFile(logPath, logStr, err => {
+      reject(err);
+    });
+
+    resolve();
+  });
+}
+
 function log(str) {
   let logStr = `[${moment().format('MM/DD/YY HH:mm:ss')}] ${str}`;
   console.log(logStr);
@@ -34,6 +50,10 @@ function log(str) {
 
     resolve();
   });
+}
+
+function logFeedbackReceived(message) {
+  logFeedback(`Received feedback '${message.text}' from ${message.from}`);
 }
 
 function logImageSent(url, to) {
@@ -287,7 +307,17 @@ module.exports = function(app) {
     }
   );
 
+  controller.hears(
+    ['feedback', 'suggestion'],
+    'message_received',
+    (bot, message) => {
+      logFeedbackReceived(message);
+      replyToMessage(message, `Thanks for the suggestion!`);
+    }
+  );
+
   controller.hears(['P', 'M'], 'message_received', (bot, message) => {
+    logFeedbackReceived(message);
     if (lastRoom !== null && 'img' in lastRoom) {
       let match = message.match[0];
       if (match === 'P' && 'pic' in lastRoom.img) {
