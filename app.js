@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', routes);
 
-require('./botkit-controller')(app);
+require('./lib/botkit-controller')(app);
 
 const port = process.env.PORT || 3000;
 http.listen(port, () => {
