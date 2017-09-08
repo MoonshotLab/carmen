@@ -1,10 +1,16 @@
 [
   {
-    "name": "Apollo",
-    "location": "Apollo is on the 1st floor, at the end of the hall that goes by the gym. The door into that hall is just to the left of the elevators on 1, or you can take the stairs all the way down. If you're coming out of an elevator, make a right and another right. Or, if you don't know left from right, apply for a job on the senior leadership team. Haha, I'm subversive!",
+    "name": "Big Dipper",
+    "location": "Big Dipper is on the 1st floor, the larger room to the left of Little Dipper, all the way down the hall from the gym. The door into that hall is just to the left of the elevators on 1. Or, if you're coming out of an elevator, make a right and another right. Or, if you don't know left from right, move to Washington D.C. You could be a uniter.",
     "img": {
-      "pic": "img/rooms/apollo-pic.jpg",
-      "map": "img/rooms/apollo-map.jpg"
+      "map": "img/rooms/big-dipper-map.jpg"
+    }
+  },
+  {
+    "name": "Little Dipper",
+    "location": "Little Dipper is on the 1st floor, the smaller room to the right of Big Dipper, all the way down the hall from the gym. The door into that hall is just to the left of the elevators on 1. Or, if you're coming out of an elevator, make a right and another right. Or, if you don't know left from right, move to Washington D.C. You could be a uniter.",
+    "img": {
+      "map": "img/rooms/little-dipper-map.jpg"
     }
   },
   {
@@ -33,10 +39,30 @@
   },
   {
     "name": "Albert II",
-    "location": "Albert II is on the 2nd floor, in corner of the Collective Studio. It's on the Baltimore side, next to Gus Grissom.",
+    "location": "Albert II is on the 2nd floor, on the Baltimore Street side of the building, all the way in the back. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is in the furthest corner to the left.",
     "img": {
-      "pic": "img/rooms/albert-ii-pic.jpg",
       "map": "img/rooms/albert-ii-map.jpg"
+    }
+  },
+  {
+    "name": "Alan Shepard",
+    "location": "Alan Shepard is on the 2nd floor, on the Baltimore Street side of the building, the next to last room in the furthest corner. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is the second to last room in the corner to the left.",
+    "img": {
+      "map": "img/rooms/alan-shepard-map.jpg"
+    }
+  },
+  {
+    "name": "Han Solo",
+    "location": "Han Solo is on the 2nd floor, on the Baltimore Street side of the building, the second room past the stairway in the back corner. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is the third to last room in the corner to the left. Unsurprisingly, Han is right next to Chewie.",
+    "img": {
+      "map": "img/rooms/han-solo-map.jpg"
+    }
+  },
+  {
+    "name": "Chewie",
+    "location": "Chewie is on the 2nd floor, on the Baltimore Street side of the building, the first room past the stairway in the back corner. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is the fourth to last room in the corner to the left. Unsurprisingly, Chewie is right next to Han.",
+    "img": {
+      "map": "img/rooms/chewie-map.jpg"
     }
   },
   {
@@ -88,22 +114,6 @@
     }
   },
   {
-    "name": "Han Solo",
-    "location": "Han Solo is on the 2nd floor, in the Collective Studio, on the Baltimore street side of the building. It's next door to Gus Grissom, demonstrating how fiction and reality co-exist.",
-    "img": {
-      "pic": "img/rooms/han-solo-pic.jpg",
-      "map": "img/rooms/han-solo-map.jpg"
-    }
-  },
-  {
-    "name": "Chewie",
-    "location": "Chewie is on the 2nd floor, in the Collective Studio, on the Baltimore street side of the building. Chewie is close to Han Solo (duh).",
-    "img": {
-      "pic": "img/rooms/chewie-pic.jpg",
-      "map": "img/rooms/chewie-map.jpg"
-    }
-  },
-  {
     "name": "Laika",
     "location": "Laika is on the 2nd floor, near the central stairwell—not so much a room as a viewing area with a large TV, right by a pair of beer taps. So maybe it's really a sports bar? ",
     "img": {
@@ -124,54 +134,6 @@
     "location": "Dyzik is on the 2nd floor, in the corridor to the Baltimore exit. It's a booth with a table. Dyzik (sometimes spelled Desik) and its twin, Tsygan, are named for cosmonaut dogs.",
     "img": {
       "map": "img/rooms/dyzik-map.jpg"
-    }
-  },
-  {
-    "name": "The City Dump",
-    "location": "The City Dump is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
-    "img": {
-      "pic": "img/rooms/the-city-dump-pic.jpg",
-      "map": "img/rooms/the-city-dump-map.jpg"
-    }
-  },
-  {
-    "name": "The Stadium",
-    "location": "The Stadium is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
-    "img": {
-      "pic": "img/rooms/the-stadium-pic.jpg",
-      "map": "img/rooms/the-stadium-map.jpg"
-    }
-  },
-  {
-    "name": "The Court House",
-    "location": "The Court House is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
-    "img": {
-      "pic": "img/rooms/the-court-house-pic.jpg",
-      "map": "img/rooms/the-court-house-map.jpg"
-    }
-  },
-  {
-    "name": "The City Plaza",
-    "location": "The City Plaza is on the 2nd floor, back past the kitchen near Crossroads. It's on the Baltimore side of the building.",
-    "img": {
-      "pic": "img/rooms/the-city-plaza-pic.jpg",
-      "map": "img/rooms/the-city-plaza-map.jpg"
-    }
-  },
-  {
-    "name": "Judy Jetson",
-    "location": "The room formerly known as Judy Jetson is on the 2nd floor in the Collective Studio. Currently it's being used as the private office for a fellow named Wesley Blue.",
-    "img": {
-      "pic": "img/rooms/judy-jetson-pic.jpg",
-      "map": "img/rooms/judy-jetson-map.jpg"
-    }
-  },
-  {
-    "name": "Jane Jetson",
-    "location": "Jane Jetson is on the 2nd floor, right next door to George, on the Main street side, near the Account team.",
-    "img": {
-      "pic": "img/rooms/jane-jetson-pic.jpg",
-      "map": "img/rooms/jane-jetson-map.jpg"
     }
   },
   {
@@ -263,6 +225,13 @@
     }
   },
   {
+    "name": "Command Center",
+    "location": "The Command Center is on the 3rd floor, on the Main Street side of the building, near Social, between Rosie and Earth.",
+    "img": {
+      "map": "img/rooms/command-center-map.jpg"
+    }
+  },
+  {
     "name": "Earth",
     "location": "Earth is on the 3rd floor, in the southeast corner. It is famous for being too hot or too cold and smelling perpetually of armpit.",
     "img": {
@@ -303,8 +272,11 @@
     }
   },
   {
-    "name": "Big Dipper",
-    "location": "The Big Dipper is on 3, where the New Business teams camp out, next to Neptune. There are no doors to the Big Dipper, which sounds like cosmic wisdom, but really just describes its walk-through openness."
+    "name": "Theia",
+    "location": "Theia is on the 3rd floor, on the Baltimore Street side, where the new business teams camp out. Theia is right next to Neptune.",
+    "img": {
+      "map": "img/rooms/theia-map.jpg"
+    }
   },
   {
     "name": "Sun",
@@ -387,6 +359,13 @@
     }
   },
   {
+    "name": "Mini War Room",
+    "location": "The Mini War Rooms are on the 3rd floor, all the way towards the back, past Blacktop. Someday, maybe all wars will be mini wars, containable in Mini War Rooms.",
+    "img": {
+      "map": "img/rooms/mini-war-room-3-map.jpg"
+    }
+  },
+  {
     "name": "Kitchen Table",
     "location": "The Kitchen Table is the long wooden table on the 4th floor.",
     "img": {
@@ -403,19 +382,179 @@
     }
   },
   {
-    "name": "The Room of Requirement",
-    "location": "The Room of Requirement is located on the 7th floor across from the tapestry of Barnabas the Barmy. "
-  },
-  {
-    "name": "The Rumi",
-    "location": "The Rumi is a mystical, whirling dervish of a room on the 13th-century floor, arranged in quatrains by a Sufi poet."
-  },
-  {
     "name": "Wardrobe",
     "location": "Wardrobe is a network hardware closet on 3, near Moonshot. Few go into Wardrobe. Those who do rarely return."
   },
   {
+    "name": "Loading Dock",
+    "location": "To load or unload something, this is the dock for you. It's on 1. The door to the left of the elevators (as you face them) is just the beginning of your labyrinthine journey. You really need to talk to Melissa Schlagle, is what you need to do.",
+    "img": {
+      "map": "img/rooms/loading-dock-map.jpg"
+    }
+  },
+  {
     "name": "Rooftop",
-    "location": "The Rooftop is the deck on the 4th floor. Take the stairs or the elevator to the top and look for the party outside. If you can't find one, you have a personal obligation to get it started. Do the right thing."
+    "location": "The Rooftop is the deck on the 4th floor. Take the stairs or the elevator to the top and look for the party outside. If you can't find one, you have a personal obligation to get it started. Do the right thing.",
+    "img": {
+      "map": "img/rooms/rooftop-map.jpg"
+    }
+  },
+  {
+    "name": "Blacktop",
+    "location": "Blacktop is on the 3rd floor, along the Baltimore St. side.",
+    "img": {
+      "map": "img/rooms/blacktop-map.jpg"
+    }
+  },
+  {
+    "name": "Moonshot",
+    "location": "Moonshot is on the 3rd floor, on the Baltimore St. side. As you exit the elevators, turn right and turn right again before you walk into the Blacktop cubes. Walk past the exhibit space and you'll spot Moonshot on the right. If you walk past the kitchen on the left, you've gone too far.",
+    "img": {
+      "map": "img/rooms/moonshot-map.jpg"
+    }
+  },
+  {
+    "name": "Studio",
+    "location": "The Studio artist team sits on 3, next to Blacktop. If you exit the elevators, turn right and right again. And then keep walking. If you run into the north wall, turn around. There they are.",
+    "img": {
+      "map": "img/rooms/studio-map.jpg"
+    }
+  },
+  {
+    "name": "Strategy",
+    "location": "Strategy sits on 3, if they get to sit at all, poor things. They're all over the place, really. As you exit the elevators, take a dogleg to the right and walk down the hall past the bathrooms. Keep walking past the mailroom on the left, and you'll walk right into the strategy area.",
+    "img": {
+      "map": "img/rooms/strategy-map.jpg"
+    }
+  },
+  {
+    "name": "Creative",
+    "location": "Creatives sit on the third floor. Well, that's where their desks are anyway. As you exit the elevator, take a left and walk toward the main staircase, head toward the center of the open space, and you'll see the creatives there. Maybe. Usually they're hiding wherever they can find a quiet spot to hunker down.",
+    "img": {
+      "map": "img/rooms/creative-map.jpg"
+    }
+  },
+  {
+    "name": "Datum",
+    "location": "Datum Labs is on 3, between the Eris alcove and the Jupiter conference room. There's an exit sign right over their little cave, but you can't actually exit there.",
+    "img": {
+      "map": "img/rooms/datum-map.jpg"
+    }
+  },
+  {
+    "name": "HR",
+    "location": "HR sits on the second floor, just behind the main staircase and next to the kitchen.",
+    "img": {
+      "map": "img/rooms/hr-map.jpg"
+    }
+  },
+  {
+    "name": "Studio",
+    "location": "Studio is on the third floor on the Baltimore St. side. As you exit the elevators, take a right and then turn right again before you enter the Blacktop area. Keep going past Moonshot, and you'll find Studio just past the kitchen on the left.",
+    "img": {
+      "map": "img/rooms/studio-map.jpg"
+    }
+  },
+  {
+    "name": "Social",
+    "location": "The social team sits on the third floor. Take a left out of the elevators and keep walking toward the Main St. side of the building. Walk past Jupiter and Saturn and you'll walk right into the Social team.",
+    "img": {
+      "map": "img/rooms/engagement-map.jpg"
+    }
+  },
+  {
+    "name": "Engagement",
+    "location": "The social team sits on the third floor. Take a left out of the elevators and keep walking toward the Main St. side of the building. Walk past Jupiter and Saturn and you'll walk right into the Social team.",
+    "img": {
+      "map": "img/rooms/engagement-map.jpg"
+    }
+  },
+  {
+    "name": "Content Studio",
+    "location": "Also known as the Fuel team, these young creative persons sit on 3, near Earth, toward the southeast corner overlooking 18th street.",
+    "img": {
+      "map": "img/rooms/content-studio-map.jpg"
+    }
+  },
+  {
+    "name": "40Digits",
+    "location": "In the 2nd-floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. And if you keep on walking down that long passageway, you'll enter the 40Digits area.",
+    "img": {
+      "map": "img/rooms/40digits-map.jpg"
+    }
+  },
+  {
+    "name": "Social",
+    "location": "The social team sits on the third floor. Take a left out of the elevators and keep walking toward the Main St. side of the building. Walk past Jupiter and Saturn and you'll walk right into the Social team.",
+    "img": {
+      "map": "img/rooms/engagement-map.jpg"
+    }
+  },
+  {
+    "name": "Collective",
+    "location": "The Collective Studio works on the Payless account. They sit on 2 now, across the hall from Crossroads, toward the Baltimore St. side of the building.",
+    "img": {
+      "map": "img/rooms/collective-studio-map.jpg"
+    }
+  },
+  {
+    "name": "Leadership",
+    "location": "The leadership team usually sits on the 4th floor, either in the Blue Lounge or at that big round table by the west windows, if they're in the office and not out tracking down new business. And if they're not in, their amazing administrative assistants are usually there and almost always know how to track them down.",
+    "img": {
+      "map": "img/rooms/leadership-map.jpg"
+    }
+  },
+  {
+    "name": "Video",
+    "location": "The video team sits in the cold, dark recesses of the third floor. Take a right as you exit the elevators and another right as you approach Blacktop. As soon as you pass the exhibit space, cut a diagonal right past Moonshot, and you'll find the video team.",
+    "img": {
+      "map": "img/rooms/video-production-map.jpg"
+    }
+  },
+  {
+    "name": "Finance",
+    "location": "The finance team sits on the second floor. They're mostly behind the workshop space where Moonshot used to be and where Ricky can still sometimes be found making loud noises that annoy the finance team.",
+    "img": {
+      "map": "img/rooms/finance-map.jpg"
+    }
+  },
+  {
+    "name": "Client Team",
+    "location": "Do you mean Account? The account people who work with clients? They sit on 2, behind HR and the IT guys and on down toward the Main St. side. ",
+    "img": {
+      "map": "img/rooms/account-map.jpg"
+    }
+  },
+  {
+    "name": "Production",
+    "location": "If you mean Video Production, that's in the cold, dark recesses of the 3rd floor. Take a right out of the elevators and then another right just past the VR/AR display. Then cut a diagonal right past Moonshot, and you'll find the video team. If you mean the Production Studio artist team, they sit on 3, next to Blacktop. If you exit the elevators, turn right and right again. And then keep walking. If you run into the north wall, turn around. They there are.",
+    "img": {
+      "map": "img/rooms/video-production-map.jpg"
+    }
+  },
+  {
+    "name": "IT",
+    "location": "The IT team sits behind the 2nd-floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
+    "img": {
+      "map": "img/rooms/help-desk-map.jpg"
+    }
+  },
+  {
+    "name": "Help Desk",
+    "location": "The IT team sits behind the 2nd-floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
+    "img": {
+      "map": "img/rooms/help-desk-map.jpg"
+    }
+  },
+  {
+    "name": "Crossroads",
+    "location": "In the 2nd-floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. You can sell your soul to the devil, here, too.",
+    "img": {
+      "map": "img/rooms/crossroads-map.jpg"
+    }
+  },
+  {
+    "name": "Panic Room",
+    "location": "We don't have one of those. Should we?"
   }
 ]
