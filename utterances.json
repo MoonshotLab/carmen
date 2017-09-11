@@ -1,0 +1,12 @@
+{
+  "greeting": [
+    "Hi there. I'm Carmen, a chatbot made by Moonshot to help you find any room in the building. To use me, just ask, 'Where's Uranus?', for example."
+  ],
+  "thanks": ["No problem!", "You're welcome!", "Don't mention it!"],
+  "idk": [
+    "I'm not sure what you mean. Try asking a different way!",
+    "I haven't been equipped to deal with that input! Can you ask me again in a different way?",
+    "Unfortunately I don't understand what you're asking. Could you phrase the question differently?"
+  ],
+  "farewell": ["Goodbye!", "Ta ta for now.", "Adios!"]
+}
