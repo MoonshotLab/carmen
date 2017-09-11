@@ -38,6 +38,13 @@
     }
   },
   {
+    "name": "Albert 2",
+    "location": "Albert II is on the 2nd floor, on the Baltimore Street side of the building, all the way in the back. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is in the furthest corner to the left.",
+    "img": {
+      "map": "img/rooms/albert-ii-map.jpg"
+    }
+  },
+  {
     "name": "Albert II",
     "location": "Albert II is on the 2nd floor, on the Baltimore Street side of the building, all the way in the back. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is in the furthest corner to the left.",
     "img": {
