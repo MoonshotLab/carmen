@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  div.container
+    div.row
+      h1 Carmen Stats
+      h4 Unique users:
+      h4 Total messages received:
+      h4 Messages understood: %
+      if rooms
+        h4 Rooms Requested (by frequency)
+          ul.nl
+              for room in rooms
+                li room.name

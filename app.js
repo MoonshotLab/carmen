@@ -6,17 +6,18 @@ const bodyParser = require('body-parser');
 const http = require('http').Server(app);
 const path = require('path');
 
-const routes = require('./routes');
-
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/', routes);
-
+require('./lib/db').initializeDbIfNecessary();
 require('./lib/botkit-controller')(app);
+
+app.use('/', require('./routes/index'));
+app.use('/logs', require('./routes/logs'));
+app.use('/stats', require('./routes/stats'));
 
 const port = process.env.PORT || 3000;
 http.listen(port, () => {

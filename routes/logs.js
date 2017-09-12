@@ -2,18 +2,15 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 
-router.get('/', function(req, res) {
-  res.render('index', {
-    title: 'Carmen',
-    bodyId: 'index'
-  });
+router.get('/', (req, res) => {
+  res.redirect('/');
 });
 
-router.get('/logs/:name', function(req, res) {
+router.get('/:name', (req, res) => {
   let fileRoot;
 
   if (process.env.NODE_ENV === 'dev') {
-    fileRoot = __dirname + '/tmp/data';
+    fileRoot = __dirname + '/../tmp/data';
   } else {
     fileRoot = '/tmp/data';
   }
@@ -29,7 +26,7 @@ router.get('/logs/:name', function(req, res) {
 
   const fileName = req.params.name;
   if (fs.existsSync(`${fileRoot}/${fileName}`)) {
-    res.sendFile(fileName, options, function(err) {
+    res.sendFile(fileName, options, err => {
       if (err) {
         next(err);
       } else {
