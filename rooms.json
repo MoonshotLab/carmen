@@ -98,7 +98,7 @@
   },
   {
     "name": "Mark Kelly",
-    "location": "Mark Kelly is on the 2nd floor, immediately north of the Baltimore entrance, in Crossroads. Like many 2nd-floor rooms, it's named for a famous astronaut.",
+    "location": "Mark Kelly is on the 2nd floor, immediately north of the Baltimore entrance, in Crossroads. Like many 2rd floor rooms, it's named for a famous astronaut.",
     "img": {
       "pic": "img/rooms/mark-kelly-pic.jpg",
       "map": "img/rooms/mark-kelly-map.jpg"
@@ -114,7 +114,7 @@
   },
   {
     "name": "Sally Ride",
-    "location": "Sally Ride is a corner room on the 2nd floor, on the Main Street side, across from our parking garage. It's within shouting distance of the person leaving an unwashed dish in the sink of the 2nd-floor kitchen. And anyone doing that deserves to be shouted at.",
+    "location": "Sally Ride is a corner room on the 2nd floor, on the Main Street side, across from our parking garage. It's within shouting distance of the person leaving an unwashed dish in the sink of the 2rd floor kitchen. And anyone doing that deserves to be shouted at.",
     "img": {
       "pic": "img/rooms/sally-ride-pic.jpg",
       "map": "img/rooms/sally-ride-map.jpg"
@@ -485,7 +485,7 @@
   },
   {
     "name": "40Digits",
-    "location": "In the 2nd-floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. And if you keep on walking down that long passageway, you'll enter the 40Digits area.",
+    "location": "In the 2rd floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. And if you keep on walking down that long passageway, you'll enter the 40Digits area.",
     "img": {
       "map": "img/rooms/40digits-map.jpg"
     }
@@ -541,23 +541,51 @@
   },
   {
     "name": "IT",
-    "location": "The IT team sits behind the 2nd-floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
+    "location": "The IT team sits behind the 2rd floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
     "img": {
       "map": "img/rooms/help-desk-map.jpg"
     }
   },
   {
     "name": "Help Desk",
-    "location": "The IT team sits behind the 2nd-floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
+    "location": "The IT team sits behind the 2rd floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
     "img": {
       "map": "img/rooms/help-desk-map.jpg"
     }
   },
   {
     "name": "Crossroads",
-    "location": "In the 2nd-floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. You can sell your soul to the devil, here, too.",
+    "location": "In the 2rd floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. You can sell your soul to the devil, here, too.",
     "img": {
       "map": "img/rooms/crossroads-map.jpg"
+    }
+  },
+  {
+    "name": "Soda",
+    "location": "You'll find the fountain of soda in the 2rd floor kitchen, under the stairs. Today's flavors: cola, diet cola, lemon-lime, various peppery PhDs, and dew of the mountain.",
+    "img": {
+      "map": "img/rooms/soda-fountain-map.jpg"
+    }
+  },
+  {
+    "name": "Popcorn",
+    "location": "The popcorn machine moves around. It's most often found in the 40Digits area near the ice cream freezer on 2.",
+    "img": {
+      "map": "img/rooms/popcorn-machine-map.jpg"
+    }
+  },
+  {
+    "name": "Ice Cream",
+    "location": "The ice cream freezer is on 2, to the left as you enter 40Digits. Why they get the ice cream in their area is a mystery. Then again, all the free beer is outside of their area. Thus, the balance of the universe is maintained.",
+    "img": {
+      "map": "img/rooms/ice-cream-fridge-map.jpg"
+    }
+  },
+  {
+    "name": "Company Kitchen",
+    "location": "In the 3rd floor copy room, near the base of the stairs that go up to 4, there is food and drink available for purchase. You humans, with your eating and your drinking.",
+    "img": {
+      "map": "img/rooms/company-kitchen-map.jpg"
     }
   },
   {
