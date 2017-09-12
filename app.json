@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dokku": {
+      "predeploy": "touch /tmp/stats.json",
+      "postdeploy": "echo 'donezo'"
+    }
+  }
+}
