@@ -12,7 +12,7 @@ block content
             h5= `Total messages received: ${stats.week.messages.received}`
             h5= `Total messages sent: ${stats.week.messages.sent}`
             h5= `Messages understood: ${Math.floor(stats.week.messages.understood / stats.week.messages.received * 100)}%`
-          if stats.week.rooms
+          if stats.week.rooms && stats.week.rooms.length > 0
             h5 Rooms Requested (by frequency)
               ul.nl
                   for room in stats.week.rooms
@@ -27,7 +27,7 @@ block content
             h5= `Total messages received: ${stats.month.messages.received}`
             h5= `Total messages sent: ${stats.month.messages.sent}`
             h5= `Messages understood: ${Math.floor(stats.month.messages.understood / stats.month.messages.received * 100)}%`
-          if stats.month.rooms
+          if stats.month.rooms && stats.month.rooms.length > 0
             h5 Rooms Requested (by frequency)
               ul.nl
                   for room in stats.month.rooms
@@ -42,7 +42,7 @@ block content
             h5= `Total messages received: ${stats.total.messages.received}`
             h5= `Total messages sent: ${stats.total.messages.sent}`
             h5= `Messages understood: ${Math.floor(stats.total.messages.understood / stats.total.messages.received * 100)}%`
-          if stats.total.rooms
+          if stats.total.rooms && stats.total.rooms.length > 0
             h5 Rooms Requested (by frequency)
               ul.nl
                   for room in stats.total.rooms
