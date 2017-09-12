@@ -2,13 +2,52 @@ extends layout.pug
 
 block content
   div.container
-    div.row
-      h1 Carmen Stats
-      h4 Unique users:
-      h4 Total messages received:
-      h4 Messages understood: %
-      if rooms
-        h4 Rooms Requested (by frequency)
-          ul.nl
-              for room in rooms
-                li room.name
+    h1 Carmen Stats
+    if stats.week
+      div.row
+        h3= `This Week (#${stats.week.num})`
+          if stats.week.users
+            h5= `Unique users: ${stats.week.users.length}`
+          if stats.week.messages
+            h5= `Total messages received: ${stats.week.messages.received}`
+            h5= `Total messages sent: ${stats.week.messages.sent}`
+            h5= `Messages understood: ${Math.floor(stats.week.messages.understood / stats.week.messages.received * 100)}%`
+          if stats.week.rooms
+            h5 Rooms Requested (by frequency)
+              ul.nl
+                  for room in stats.week.rooms
+                    if room.name
+                      li= `${room.name}: ${room.totalRequests} total requests, ${room.picRequests} picture requests, ${room.mapRequests} map requests`
+    if stats.month
+      div.row
+        h3= `This Month (${stats.month.name})`
+          if stats.month.users
+            h5= `Unique users: ${stats.month.users.length}`
+          if stats.month.messages
+            h5= `Total messages received: ${stats.month.messages.received}`
+            h5= `Total messages sent: ${stats.month.messages.sent}`
+            h5= `Messages understood: ${Math.floor(stats.month.messages.understood / stats.month.messages.received * 100)}%`
+          if stats.month.rooms
+            h5 Rooms Requested (by frequency)
+              ul.nl
+                  for room in stats.month.rooms
+                    if room.name
+                      li= `${room.name}: ${room.totalRequests} total requests, ${room.picRequests} picture requests, ${room.mapRequests} map requests`
+    if stats.total
+      div.row
+        h3 Total
+          if stats.total.users
+            h5= `Unique users: ${stats.total.users.length}`
+          if stats.total.messages
+            h5= `Total messages received: ${stats.total.messages.received}`
+            h5= `Total messages sent: ${stats.total.messages.sent}`
+            h5= `Messages understood: ${Math.floor(stats.total.messages.understood / stats.total.messages.received * 100)}%`
+          if stats.total.rooms
+            h5 Rooms Requested (by frequency)
+              ul.nl
+                  for room in stats.total.rooms
+                    if room.name
+                      li= `${room.name}: ${room.totalRequests} total requests, ${room.picRequests} picture requests, ${room.mapRequests} map requests`
+
+    //- pre
+    //-   code= JSON.stringify(stats, null, 2)
