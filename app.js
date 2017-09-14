@@ -18,6 +18,7 @@ require('./lib/botkit-controller')(app);
 app.use('/', require('./routes/index'));
 app.use('/logs', require('./routes/logs'));
 app.use('/stats', require('./routes/stats'));
+app.use('/dl', require('./routes/dl'));
 
 const port = process.env.PORT || 3000;
 http.listen(port, () => {
