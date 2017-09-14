@@ -15,6 +15,14 @@ body#index {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0.25em;
+}
+
 main {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -44,5 +52,28 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+#stats-wrap {
+  font-size: 1.8rem;
+  li,
+  p,
+  h5 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-top: 0;
+    list-style-type: disc;
+    // list-style: disc;
+
+    ul {
+      list-style: circle inside;
+    }
   }
 }
