@@ -16,8 +16,9 @@ block content
                 strong= stats.week.messages.received
               li Total messages sent: 
                 strong= stats.week.messages.sent
-              li Messages understood: 
-                strong= `${Math.floor(stats.week.messages.understood / stats.week.messages.received * 100)}%`
+              if stats.week.messages.received > 0
+                li Messages understood: 
+                  strong= `${Math.floor(stats.week.messages.understood / stats.week.messages.received * 100)}%`
             if stats.week.rooms && stats.week.rooms.length > 0
               li Rooms Requested (by frequency)
                 ul.nl
