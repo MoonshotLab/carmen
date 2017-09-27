@@ -591,5 +591,13 @@
   {
     "name": "Panic Room",
     "location": "We don't have one of those. Should we?"
+  },
+  {
+    "name": "Yoga",
+    "location": "Yoga is held on Tuesdays and Thursdays at 12:15 on the fourth floor. Look for the people wearing lycra and centering the root chakra. Namaste."
+  },
+  {
+    "name": "Bootcamp",
+    "location": "Bootcamp is held in the gym on 1. It happens on Monday at 12pm and 4:30, Tuesday at 7:45am and 12pm, Wednesday at 12pm and 4:30, Thursday at 7:45am, 12pm and 4:30, and Friday at 12pm. Smell your way there."
   }
 ]
