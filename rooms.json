@@ -38,15 +38,9 @@
     }
   },
   {
-    "name": "Albert 2",
-    "location": "Albert II is on the 2nd floor, on the Baltimore Street side of the building, all the way in the back. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is in the furthest corner to the left.",
-    "img": {
-      "map": "img/rooms/albert-ii-map.jpg"
-    }
-  },
-  {
     "name": "Albert II",
     "location": "Albert II is on the 2nd floor, on the Baltimore Street side of the building, all the way in the back. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is in the furthest corner to the left.",
+    "alternateNames": ["Albert II", "Albert"],
     "img": {
       "map": "img/rooms/albert-ii-map.jpg"
     }
@@ -54,6 +48,7 @@
   {
     "name": "Alan Shepard",
     "location": "Alan Shepard is on the 2nd floor, on the Baltimore Street side of the building, the next to last room in the furthest corner. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is the second to last room in the corner to the left.",
+    "alternateNames": ["Alan", "Shepard"],
     "img": {
       "map": "img/rooms/alan-shepard-map.jpg"
     }
@@ -61,6 +56,7 @@
   {
     "name": "Han Solo",
     "location": "Han Solo is on the 2nd floor, on the Baltimore Street side of the building, the second room past the stairway in the back corner. After entering the area by Crossroads, follow the path then take a left at 40Digits and the room is the third to last room in the corner to the left. Unsurprisingly, Han is right next to Chewie.",
+    "alternateNames": ["Han", "Solo"],
     "img": {
       "map": "img/rooms/han-solo-map.jpg"
     }
@@ -75,6 +71,7 @@
   {
     "name": "Buzz Aldrin",
     "location": "Buzz Aldrin is on the 2nd floor, in the corner of Collective Studio closest to 18th and Baltimore. To infinity and beyond! Or was that another Buzz?",
+    "alternateNames": ["Buzz", "Aldrin"],
     "img": {
       "pic": "img/rooms/buzz-aldrin-pic.jpg",
       "map": "img/rooms/buzz-aldrin-map.jpg"
@@ -83,6 +80,7 @@
   {
     "name": "Ellen Ochoa",
     "location": "Ellen Ochoa is on the 2nd floor, in Crossroads, just north of the Baltimore entrance. This is a nice big room with a nice big blackboard. For some reason, wireless connections are sometimes iffy here.",
+    "alternateNames": ["Ellen", "Ochoa"],
     "img": {
       "pic": "img/rooms/ellen-ochoa-pic.jpg",
       "map": "img/rooms/ellen-ochoa-map.jpg"
@@ -91,6 +89,7 @@
   {
     "name": "Gus Grissom",
     "location": "Gus Grissom is on the 2nd floor. It's the large conference room on the west side near the southwest corner. If the sliding doors are closed, stand at the very center to pull them open. Some people get confused when trying to open them from one side or other, and they end up just standing there, looking sad.",
+    "alternateNames": ["Gus", "Grissom"],
     "img": {
       "pic": "img/rooms/gus-grissom-pic.jpg",
       "map": "img/rooms/gus-grissom-map.jpg"
@@ -99,6 +98,7 @@
   {
     "name": "Mark Kelly",
     "location": "Mark Kelly is on the 2nd floor, immediately north of the Baltimore entrance, in Crossroads. Like many 2rd floor rooms, it's named for a famous astronaut.",
+    "alternateNames": ["Mark", "Kelly"],
     "img": {
       "pic": "img/rooms/mark-kelly-pic.jpg",
       "map": "img/rooms/mark-kelly-map.jpg"
@@ -107,6 +107,7 @@
   {
     "name": "Neil Armstrong",
     "location": "Neil Armstrong is on the 2nd floor, on the Main Street side of the building. It's one small step away from the Account team, a giant leap from the 4th-floor beer taps.",
+    "alternateNames": ["Neil", "Armstrong"],
     "img": {
       "pic": "img/rooms/neil-armstrong-pic.jpg",
       "map": "img/rooms/neil-armstrong-map.jpg"
@@ -115,6 +116,7 @@
   {
     "name": "Sally Ride",
     "location": "Sally Ride is a corner room on the 2nd floor, on the Main Street side, across from our parking garage. It's within shouting distance of the person leaving an unwashed dish in the sink of the 2rd floor kitchen. And anyone doing that deserves to be shouted at.",
+    "alternateNames": ["Sally", "Ride"],
     "img": {
       "pic": "img/rooms/sally-ride-pic.jpg",
       "map": "img/rooms/sally-ride-map.jpg"
@@ -146,6 +148,7 @@
   {
     "name": "George Jetson",
     "location": "George Jetson is on the 2nd floor, right next door to Jane, on the Main street side, near the Account team.",
+    "alternateNames": ["George"],
     "img": {
       "pic": "img/rooms/george-jetson-pic.jpg",
       "map": "img/rooms/george-jetson-map.jpg"
@@ -218,6 +221,7 @@
   {
     "name": "Mr. Spacely",
     "location": "Mr. Spacely is on the 3rd floor, on the Main Street side of the building, near Social.",
+    "alternateNames": ["Spacely"],
     "img": {
       "pic": "img/rooms/mr-spacely-pic.jpg",
       "map": "img/rooms/mr-spacely-map.jpg"
@@ -304,6 +308,7 @@
   {
     "name": "Michael Bay",
     "location": "Michael Bay is one of the video team edit bays on the 3rd floor, right next to Moonshot. It's the one with all the lens flare and explosions.",
+    "alternateNames": ["Michael"],
     "img": {
       "pic": "img/rooms/michael-bay-pic.jpg",
       "map": "img/rooms/michael-bay-map.jpg"
@@ -312,6 +317,7 @@
   {
     "name": "Bay Romano",
     "location": "Bay Romano is one of the video team edit bays on the 3rd floor, right next to Production. Everybody loves Baymond.",
+    "alternateNames": ["Romano"],
     "img": {
       "pic": "img/rooms/bay-romano-pic.jpg",
       "map": "img/rooms/bay-romano-map.jpg"
@@ -328,6 +334,7 @@
   {
     "name": "Blue Lounge",
     "location": "The Blue Lounge is on the 4th floor, in a corner on the Baltimore Street side, right by Flight Deck. ",
+    "alternateNames": ["Blue"],
     "img": {
       "pic": "img/rooms/blue-lounge-pic.jpg",
       "map": "img/rooms/blue-lounge-map.jpg"
@@ -336,6 +343,7 @@
   {
     "name": "Magenta Lounge",
     "location": "The Magenta Lounge is on the 4th floor, near the Southeast corner, just inside of the doors to the rooftop deck.",
+    "alternateNames": ["Magenta"],
     "img": {
       "pic": "img/rooms/magenta-lounge-pic.jpg",
       "map": "img/rooms/magenta-lounge-map.jpg"
@@ -344,6 +352,7 @@
   {
     "name": "Green Lounge",
     "location": "The Green Lounge is the stage on the 4th floor, right in the middle.",
+    "alternateNames": ["Green"],
     "img": {
       "pic": "img/rooms/green-lounge-pic.jpg",
       "map": "img/rooms/green-lounge-map.jpg"
@@ -352,6 +361,7 @@
   {
     "name": "Black Lounge",
     "location": "The Black Lounge is on the 4th floor, overlooking 18th and Baltimore, right next to the Magenta Lounge, behind the ropes.",
+    "alternateNames": ["Black"],
     "img": {
       "pic": "img/rooms/black-lounge-pic.jpg",
       "map": "img/rooms/black-lounge-map.jpg"
@@ -368,6 +378,7 @@
   {
     "name": "Mini War Room",
     "location": "The Mini War Rooms are on the 3rd floor, all the way towards the back, past Blacktop. Someday, maybe all wars will be mini wars, containable in Mini War Rooms.",
+    "alternateNames": ["War Room", "War"],
     "img": {
       "map": "img/rooms/mini-war-room-3-map.jpg"
     }
@@ -383,6 +394,7 @@
   {
     "name": "Zen Rooms",
     "location": "The Zen Rooms are on the 4th floor, at the top of the stairs, with the red doors. If you want to work with the door closed, which is kind of the point, be sure to turn on the red light. You don't have to turn on the red light, Roxanne. But in this case, you should.",
+    "alternateNames": ["Zen"],
     "img": {
       "pic": "img/rooms/zen-rooms-pic.jpg",
       "map": "img/rooms/zen-rooms-map.jpg"
@@ -395,6 +407,7 @@
   {
     "name": "Loading Dock",
     "location": "To load or unload something, this is the dock for you. It's on 1. The door to the left of the elevators (as you face them) is just the beginning of your labyrinthine journey. You really need to talk to Melissa Schlagle, is what you need to do.",
+    "alternateNames": ["Dock"],
     "img": {
       "map": "img/rooms/loading-dock-map.jpg"
     }
@@ -465,13 +478,7 @@
   {
     "name": "Social",
     "location": "The social team sits on the third floor. Take a left out of the elevators and keep walking toward the Main St. side of the building. Walk past Jupiter and Saturn and you'll walk right into the Social team.",
-    "img": {
-      "map": "img/rooms/engagement-map.jpg"
-    }
-  },
-  {
-    "name": "Engagement",
-    "location": "The social team sits on the third floor. Take a left out of the elevators and keep walking toward the Main St. side of the building. Walk past Jupiter and Saturn and you'll walk right into the Social team.",
+    "alternateNames": ["Engagement"],
     "img": {
       "map": "img/rooms/engagement-map.jpg"
     }
@@ -479,6 +486,7 @@
   {
     "name": "Content Studio",
     "location": "Also known as the Fuel team, these young creative persons sit on 3, near Earth, toward the southeast corner overlooking 18th street.",
+    "alternateNames": ["Fuel"],
     "img": {
       "map": "img/rooms/content-studio-map.jpg"
     }
@@ -486,15 +494,9 @@
   {
     "name": "40Digits",
     "location": "In the 2rd floor hallway leading out to Baltimore St., there's a red wall, inset kind of like a window seat with no window. Through the doorway next to it is Crossroads, our PR group. And if you keep on walking down that long passageway, you'll enter the 40Digits area.",
+    "alternateNames": ["40 Digits"],
     "img": {
       "map": "img/rooms/40digits-map.jpg"
-    }
-  },
-  {
-    "name": "Social",
-    "location": "The social team sits on the third floor. Take a left out of the elevators and keep walking toward the Main St. side of the building. Walk past Jupiter and Saturn and you'll walk right into the Social team.",
-    "img": {
-      "map": "img/rooms/engagement-map.jpg"
     }
   },
   {
@@ -514,6 +516,7 @@
   {
     "name": "Video",
     "location": "The video team sits in the cold, dark recesses of the third floor. Take a right as you exit the elevators and another right as you approach Blacktop. As soon as you pass the exhibit space, cut a diagonal right past Moonshot, and you'll find the video team.",
+    "alternateNames": ["Production"],
     "img": {
       "map": "img/rooms/video-production-map.jpg"
     }
@@ -521,6 +524,7 @@
   {
     "name": "Finance",
     "location": "The finance team sits on the second floor. They're mostly behind the workshop space where Moonshot used to be and where Ricky can still sometimes be found making loud noises that annoy the finance team.",
+    "alternateNames": ["Accounting"],
     "img": {
       "map": "img/rooms/finance-map.jpg"
     }
@@ -533,22 +537,9 @@
     }
   },
   {
-    "name": "Production",
-    "location": "If you mean Video Production, that's in the cold, dark recesses of the 3rd floor. Take a right out of the elevators and then another right just past the VR/AR display. Then cut a diagonal right past Moonshot, and you'll find the video team. If you mean the Production Studio artist team, they sit on 3, next to Blacktop. If you exit the elevators, turn right and right again. And then keep walking. If you run into the north wall, turn around. They there are.",
-    "img": {
-      "map": "img/rooms/video-production-map.jpg"
-    }
-  },
-  {
     "name": "IT",
     "location": "The IT team sits behind the 2rd floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
-    "img": {
-      "map": "img/rooms/help-desk-map.jpg"
-    }
-  },
-  {
-    "name": "Help Desk",
-    "location": "The IT team sits behind the 2rd floor kitchen, past HR. Look for a round table and a bunch of computer junk and some super nice guys who will help you, so stop crying.",
+    "alternateNames": ["Help Desk"],
     "img": {
       "map": "img/rooms/help-desk-map.jpg"
     }
