@@ -19,6 +19,7 @@ app.use('/', require('./routes/index'));
 app.use('/logs', require('./routes/logs'));
 app.use('/stats', require('./routes/stats'));
 app.use('/dl', require('./routes/dl'));
+app.use('/vcard', require('./routes/vcard'));
 
 const port = process.env.PORT || 3000;
 http.listen(port, () => {
