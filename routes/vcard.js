@@ -3,12 +3,15 @@ const router = express.Router();
 const path = require('path');
 const vCard = require('vcards-js');
 
+const publicPath = path.resolve(__dirname, '../public');
+const logoPath = path.join(publicPath, 'img/logo.jpg');
+
 function getCarmenVcard() {
   const card = vCard();
 
   card.firstName = 'Carmen';
   card.organization = 'Barkley';
-  card.photo.attachFromUrl(`${process.env.SITE_URL}/logo.jpg`, 'JPEG');
+  card.photo.embedFromFile(logoPath);
   card.workPhone = '816-298-9138';
   card.workAddress.street = '1740 Main';
   card.workAddress.city = 'Kansas City';
