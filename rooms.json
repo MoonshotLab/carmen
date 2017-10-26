@@ -675,7 +675,7 @@
   {
     "name": "Popcorn",
     "location":
-      "The popcorn popper shares a small alcove with the ice cream freezer, between the Crossroads kitchen and The City Plaza room. If you go through Crossroads all the way back to 40Digits, look left. Go left. Is there popcorn left? If not, it's your right to default to ice cream.",
+      "The popcorn popper is on the 2nd floor and shares a small alcove with the ice cream freezer, between the Crossroads kitchen and The City Plaza room. If you go through Crossroads all the way back to 40Digits, look left. Go left. Is there popcorn left? If not, it's your right to default to ice cream.",
     "img": {
       "map": "img/rooms/popcorn-machine-map.jpg"
     }
@@ -683,7 +683,7 @@
   {
     "name": "Ice Cream",
     "location":
-      "The ice cream freezer shares a small alcove with the popcorn popper, between the Crossroads kitchen and The City Plaza room. If you go through Crossroads all the way back to 40Digits, look left. Go left. Is there ice cream left? Lick it.",
+      "The ice cream freezer is on the 2nd floor and shares a small alcove with the popcorn popper, between the Crossroads kitchen and The City Plaza room. If you go through Crossroads all the way back to 40Digits, look left. Go left. Is there ice cream left? Lick it.",
     "img": {
       "map": "img/rooms/ice-cream-fridge-map.jpg"
     }
