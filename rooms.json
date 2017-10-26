@@ -343,15 +343,6 @@
     }
   },
   {
-    "name": "Calvera",
-    "location":
-      "Calvera is the odd angular structure on the 3rd floor, right next to Moonshot. There, you might find yourself swimming with a whale, or walking a plank, or shooting some robots in outer space. Don't know what I'm talking about? Reach out to Moonshot and they'll show you a great time. ",
-    "img": {
-      "pic": "img/rooms/calvera-pic.jpg",
-      "map": "img/rooms/calvera-map.jpg"
-    }
-  },
-  {
     "name": "Michael Bay",
     "location":
       "Michael Bay is one of the video team edit bays on the 3rd floor, right next to Moonshot. It's the one with all the lens flare and explosions.",
