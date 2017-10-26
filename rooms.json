@@ -684,7 +684,7 @@
   {
     "name": "Popcorn",
     "location":
-      "The popcorn machine moves around. It's most often found in the 40Digits area near the ice cream freezer on 2.",
+      "The popcorn popper shares a small alcove with the ice cream freezer, between the Crossroads kitchen and The City Plaza room. If you go through Crossroads all the way back to 40Digits, look left. Go left. Is there popcorn left? If not, it's your right to default to ice cream.",
     "img": {
       "map": "img/rooms/popcorn-machine-map.jpg"
     }
@@ -692,7 +692,7 @@
   {
     "name": "Ice Cream",
     "location":
-      "The ice cream freezer is on 2, to the left as you enter 40Digits. Why they get the ice cream in their area is a mystery. Then again, all the free beer is outside of their area. Thus, the balance of the universe is maintained.",
+      "The ice cream freezer shares a small alcove with the popcorn popper, between the Crossroads kitchen and The City Plaza room. If you go through Crossroads all the way back to 40Digits, look left. Go left. Is there ice cream left? Lick it.",
     "img": {
       "map": "img/rooms/ice-cream-fridge-map.jpg"
     }
